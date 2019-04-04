@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="WorkSans-SemiBold.otf">
+            <string>WorkSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Messages Gallery SharingVC-->
+        <scene sceneID="Yur-n0-vJU">
+            <objects>
+                <viewController storyboardIdentifier="MessagesGallerySharingVC" id="CWf-1o-3ld" customClass="MessagesGallerySharingVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hdo-tK-AhO"/>
+                        <viewControllerLayoutGuide type="bottom" id="gc0-TL-qUt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="afR-Dt-ihP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wVp-tb-hDT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sz-S5-CJo">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
+                                        <connections>
+                                            <segue destination="m9h-9h-JcA" kind="embed" identifier="CollectionViewSegue" id="k5X-3i-HgD"/>
+                                        </connections>
+                                    </containerView>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="nfi-9l-ibD" customClass="MessagesSharingToolsContainer" customModule="Arrow" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSJ-uC-BGC">
+                                                <rect key="frame" x="20" y="0.0" width="335" height="40"/>
+                                                <subviews>
+                                                    <button contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW3-AU-dtr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="74" height="40"/>
+                                                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="WorkSans-SemiBold" family="Work Sans" pointSize="17"/>
+                                                        <state key="normal" title="Deselect"/>
+                                                        <connections>
+                                                            <action selector="deselect:" destination="CWf-1o-3ld" eventType="touchUpInside" id="Lcn-Mi-kYl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="3 selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nae-SN-cFY">
+                                                        <rect key="frame" x="74" y="0.0" width="187" height="40"/>
+                                                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTd-c1-M0U">
+                                                        <rect key="frame" x="261" y="0.0" width="74" height="40"/>
+                                                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <state key="normal" title="Add"/>
+                                                        <connections>
+                                                            <action selector="add:" destination="CWf-1o-3ld" eventType="touchUpInside" id="cIm-xo-iMe"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="0qu-Rw-3qb"/>
+                                                    <constraint firstItem="XW3-AU-dtr" firstAttribute="width" secondItem="yTd-c1-M0U" secondAttribute="width" id="yxy-xb-lPv"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="aSJ-uC-BGC" secondAttribute="trailing" constant="20" id="KEu-PA-D8D"/>
+                                            <constraint firstItem="aSJ-uC-BGC" firstAttribute="top" secondItem="nfi-9l-ibD" secondAttribute="top" id="hT7-2a-2Nr"/>
+                                            <constraint firstItem="aSJ-uC-BGC" firstAttribute="leading" secondItem="nfi-9l-ibD" secondAttribute="leading" constant="20" id="mZO-CR-kes"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gc0-TL-qUt" firstAttribute="top" secondItem="wVp-tb-hDT" secondAttribute="bottom" id="MPI-Qt-2O0"/>
+                            <constraint firstItem="wVp-tb-hDT" firstAttribute="top" secondItem="hdo-tK-AhO" secondAttribute="bottom" id="Wdy-Ze-hgH"/>
+                            <constraint firstItem="wVp-tb-hDT" firstAttribute="leading" secondItem="afR-Dt-ihP" secondAttribute="leading" id="qzA-gJ-Xyz"/>
+                            <constraint firstAttribute="trailing" secondItem="wVp-tb-hDT" secondAttribute="trailing" id="tBo-GL-BCk"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="selectedCountLabel" destination="Nae-SN-cFY" id="8SD-vA-lOA"/>
+                        <outlet property="stackView" destination="wVp-tb-hDT" id="BLW-Kq-AUS"/>
+                        <outlet property="toolsContainerView" destination="nfi-9l-ibD" id="P1V-dN-szJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYS-BL-oFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-559.20000000000005" y="173.16341829085459"/>
+        </scene>
+        <!--Messages Gallery Sharing CollectionVC-->
+        <scene sceneID="Xkz-pr-Pq2">
+            <objects>
+                <collectionViewController id="m9h-9h-JcA" customClass="MessagesGallerySharingCollectionVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="pHT-9D-2Ie">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="3" minimumInteritemSpacing="3" id="eg6-w3-ouI">
+                            <size key="itemSize" width="121" height="121"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="3" minY="3" maxX="3" maxY="3"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MessagesGallerySharingCell" id="Vle-Tm-Waa" customClass="MessagesGallerySharingCollectionViewCell" customModule="Arrow" customModuleProvider="target">
+                                <rect key="frame" x="3" y="3" width="121" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="121" height="121"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MessagingGallerySharingSelectedBadge" translatesAutoresizingMaskIntoConstraints="NO" id="Ie1-RD-df9">
+                                            <rect key="frame" x="0.0" y="0.0" width="121" height="121"/>
+                                        </imageView>
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MessagingGallerySharingSelectedBadge" translatesAutoresizingMaskIntoConstraints="NO" id="F9k-NR-ju6">
+                                            <rect key="frame" x="79" y="10" width="32" height="32"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ie1-RD-df9" firstAttribute="leading" secondItem="Vle-Tm-Waa" secondAttribute="leading" id="Jee-38-gK5"/>
+                                    <constraint firstAttribute="trailing" secondItem="F9k-NR-ju6" secondAttribute="trailing" constant="10" id="LhW-gI-Pf9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ie1-RD-df9" secondAttribute="trailing" id="a8P-df-FHV"/>
+                                    <constraint firstItem="F9k-NR-ju6" firstAttribute="top" secondItem="Vle-Tm-Waa" secondAttribute="top" constant="10" id="aGm-7W-uVj"/>
+                                    <constraint firstItem="Ie1-RD-df9" firstAttribute="top" secondItem="Vle-Tm-Waa" secondAttribute="top" id="gbX-Ka-TJz"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ie1-RD-df9" secondAttribute="bottom" id="u5r-wL-Hbu"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="Ie1-RD-df9" id="POR-A6-pDY"/>
+                                    <outlet property="selectedBadgeImageView" destination="F9k-NR-ju6" id="GYw-R7-F7z"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="m9h-9h-JcA" id="haG-IJ-cSs"/>
+                            <outlet property="delegate" destination="m9h-9h-JcA" id="4Nt-iK-eY2"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcm-bY-Q91" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="173"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MessagingGallerySharingSelectedBadge" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-Bold.otf">
+            <string>AlegreyaSans-Bold</string>
+        </array>
+        <array key="AlegreyaSans-Medium.otf">
+            <string>AlegreyaSans-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NearbyLocationCell" id="d3I-rt-Ecz" customClass="NearbyLocationCell" customModule="Arrow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d3I-rt-Ecz" id="o7D-id-fgU">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LocationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="lJ6-So-BwZ">
+                        <rect key="frame" x="20" y="22" width="15" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="S8K-ZR-y3P"/>
+                            <constraint firstAttribute="height" constant="21" id="WAT-kq-gpk"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kbh-7a-Dj3">
+                        <rect key="frame" x="47" y="10" width="252" height="44.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RX-EG-jWn">
+                                <rect key="frame" x="0.0" y="0.0" width="252" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="NpV-2z-sti"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p01-1i-MTG">
+                                <rect key="frame" x="0.0" y="26" width="252" height="18.5"/>
+                                <fontDescription key="fontDescription" name="AlegreyaSans-Medium" family="Alegreya Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p01-1i-MTG" firstAttribute="top" secondItem="9RX-EG-jWn" secondAttribute="bottom" constant="4" id="GNj-gN-Skn"/>
+                            <constraint firstAttribute="bottom" secondItem="p01-1i-MTG" secondAttribute="bottom" id="TMp-ss-Z02"/>
+                            <constraint firstItem="9RX-EG-jWn" firstAttribute="top" secondItem="Kbh-7a-Dj3" secondAttribute="top" id="WQU-PH-f2K"/>
+                            <constraint firstItem="9RX-EG-jWn" firstAttribute="leading" secondItem="Kbh-7a-Dj3" secondAttribute="leading" id="dEp-dN-Icc"/>
+                            <constraint firstItem="p01-1i-MTG" firstAttribute="leading" secondItem="Kbh-7a-Dj3" secondAttribute="leading" id="hLe-z9-Rhp"/>
+                            <constraint firstAttribute="trailing" secondItem="p01-1i-MTG" secondAttribute="trailing" id="o7f-VE-LGq"/>
+                            <constraint firstAttribute="trailing" secondItem="9RX-EG-jWn" secondAttribute="trailing" id="oi7-Qf-aBo"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNr-W4-kgS">
+                        <rect key="frame" x="307" y="12.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="lNr-W4-kgS" secondAttribute="height" multiplier="1:1" id="Vjh-qU-aVE"/>
+                            <constraint firstAttribute="width" constant="40" id="Vlm-pZ-KCj"/>
+                        </constraints>
+                        <state key="normal" image="BookmarksRoundIcon"/>
+                        <connections>
+                            <action selector="bookmarkButtonPressedWithSender:" destination="d3I-rt-Ecz" eventType="touchUpInside" id="5yX-xx-B2x"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lJ6-So-BwZ" firstAttribute="centerY" secondItem="Kbh-7a-Dj3" secondAttribute="centerY" id="GXg-Lp-jhR"/>
+                    <constraint firstItem="lNr-W4-kgS" firstAttribute="centerY" secondItem="o7D-id-fgU" secondAttribute="centerY" id="LUo-nb-1df"/>
+                    <constraint firstAttribute="bottom" secondItem="Kbh-7a-Dj3" secondAttribute="bottom" constant="10" id="ZBM-Q3-Fcf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lNr-W4-kgS" secondAttribute="trailing" constant="12" id="eij-MD-YRL"/>
+                    <constraint firstItem="Kbh-7a-Dj3" firstAttribute="leading" secondItem="lJ6-So-BwZ" secondAttribute="trailing" constant="12" id="eow-hy-07L"/>
+                    <constraint firstItem="lJ6-So-BwZ" firstAttribute="leading" secondItem="o7D-id-fgU" secondAttribute="leading" constant="20" id="jwo-jS-ihv"/>
+                    <constraint firstItem="Kbh-7a-Dj3" firstAttribute="top" secondItem="o7D-id-fgU" secondAttribute="top" constant="10" id="pg7-Qd-kwl"/>
+                    <constraint firstItem="lNr-W4-kgS" firstAttribute="leading" secondItem="Kbh-7a-Dj3" secondAttribute="trailing" constant="8" id="uxz-lB-TTL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bookmarkButton" destination="lNr-W4-kgS" id="CSd-Gs-O3H"/>
+                <outlet property="locationAddress" destination="p01-1i-MTG" id="hVh-1N-UHc"/>
+                <outlet property="locationTitle" destination="9RX-EG-jWn" id="J8t-7h-J2t"/>
+                <outlet property="titleLableHeight" destination="NpV-2z-sti" id="z3U-fr-hH0"/>
+            </connections>
+            <point key="canvasLocation" x="-63.5" y="-38.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BookmarksRoundIcon" width="59" height="59"/>
+        <image name="LocationIcon" width="17" height="21"/>
+    </resources>
+</document>

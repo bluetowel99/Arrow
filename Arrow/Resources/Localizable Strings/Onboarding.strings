@@ -1,0 +1,19 @@
+/* 
+  Onboarding.strings
+  Arrow
+
+  Created by Kiarash on 11/30/16.
+  Copyright © 2016 Arrow Application, LLC. All rights reserved.
+*/
+
+
+// Onboarding promo slide buttons
+
+
+/* Sign up button's title. */
+
+"onboarding.signup-button.title" = "Sign Up";
+
+/* Loging button's title. */
+
+"onboarding.login-button.title" = "Log In";

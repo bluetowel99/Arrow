@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="WorkSans-Bold.otf">
+            <string>WorkSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="redraw" id="iN0-l3-epB" customClass="MapsFlagMarkerView" customModule="Arrow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="69" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MVS-KV-wqg">
+                    <rect key="frame" x="9" y="0.0" width="60" height="21"/>
+                    <color key="backgroundColor" red="0.019607843140000001" green="0.21960784310000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="MapsFlag3D" translatesAutoresizingMaskIntoConstraints="NO" id="daU-Xo-KOT">
+                    <rect key="frame" x="0.0" y="25" width="30" height="30"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:00 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZy-ms-xYi">
+                    <rect key="frame" x="14" y="4" width="50" height="13"/>
+                    <fontDescription key="fontDescription" name="WorkSans-Bold" family="Work Sans" pointSize="11"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eZy-ms-xYi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="Ex7-UO-fES"/>
+                <constraint firstItem="daU-Xo-KOT" firstAttribute="top" secondItem="eZy-ms-xYi" secondAttribute="bottom" constant="8" id="FLj-x6-lgq"/>
+                <constraint firstItem="MVS-KV-wqg" firstAttribute="top" secondItem="eZy-ms-xYi" secondAttribute="top" constant="-4" id="Pdq-Wz-EOh"/>
+                <constraint firstItem="daU-Xo-KOT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="g8t-Wf-Sqs"/>
+                <constraint firstItem="MVS-KV-wqg" firstAttribute="leading" secondItem="eZy-ms-xYi" secondAttribute="leading" constant="-5" id="hSQ-R9-2zw"/>
+                <constraint firstAttribute="trailing" secondItem="eZy-ms-xYi" secondAttribute="trailing" constant="5" id="ncz-FH-Y82"/>
+                <constraint firstItem="eZy-ms-xYi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="ofX-0T-3R9"/>
+                <constraint firstItem="MVS-KV-wqg" firstAttribute="trailing" secondItem="eZy-ms-xYi" secondAttribute="trailing" constant="5" id="xMp-lK-3dD"/>
+                <constraint firstItem="MVS-KV-wqg" firstAttribute="bottom" secondItem="eZy-ms-xYi" secondAttribute="bottom" constant="4" id="yHk-Qf-mN2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="labelDecoration" destination="MVS-KV-wqg" id="0zq-Jr-KjX"/>
+                <outlet property="timeLabel" destination="eZy-ms-xYi" id="1gA-sP-cDB"/>
+            </connections>
+            <point key="canvasLocation" x="-105.5" y="-234.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MapsFlag3D" width="30" height="30"/>
+    </resources>
+</document>

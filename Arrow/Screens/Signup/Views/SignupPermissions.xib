@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-ExtraBold.otf">
+            <string>AlegreyaSans-ExtraBold</string>
+        </array>
+        <array key="AlegreyaSans-Medium.otf">
+            <string>AlegreyaSans-Medium</string>
+        </array>
+        <array key="WorkSans-Black.otf">
+            <string>WorkSans-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="Giv-gc-HJU" customClass="SignupPermissionsVC" customModule="Arrow" customModuleProvider="target">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="bnQ-2B-jGx"/>
+                <viewControllerLayoutGuide type="bottom" id="dyv-i1-khM"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="xbq-6z-R0w">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c4f-bj-FtD">
+                        <rect key="frame" x="19" y="28" width="337.5" height="71"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Set Your" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ga-dF-uNd">
+                                <rect key="frame" x="0.0" y="0.0" width="337.5" height="35.5"/>
+                                <fontDescription key="fontDescription" name="WorkSans-Black" family="Work Sans" pointSize="30"/>
+                                <color key="textColor" red="0.019607843140000001" green="0.21960784310000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Permissions" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="WTJ-DN-jAP">
+                                <rect key="frame" x="0.0" y="35.5" width="337.5" height="35.5"/>
+                                <fontDescription key="fontDescription" name="WorkSans-Black" family="Work Sans" pointSize="30"/>
+                                <color key="textColor" red="0.019607843140000001" green="0.21960784310000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the list to set your permissions." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKW-xV-7Yt">
+                        <rect key="frame" x="70.5" y="127" width="235" height="58"/>
+                        <fontDescription key="fontDescription" name="AlegreyaSans-Medium" family="Alegreya Sans" pointSize="24"/>
+                        <color key="textColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNS-QP-rf7">
+                        <rect key="frame" x="0.0" y="205" width="375" height="395"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnq-l8-6dY" userLabel="Content View">
+                                <rect key="frame" x="20" y="0.0" width="335" height="330"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="mLK-cr-I6q">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="330"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSh-Yw-Cbt" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="LBW-rc-IYC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AlegreyaSans-Medium" family="Alegreya Sans" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Allow Notifications">
+                                                    <color key="titleColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="notificationsButtonPressed:" destination="Giv-gc-HJU" eventType="touchUpInside" id="imh-wp-4vq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RS-oM-hUv" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="57" width="335" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="YzB-i2-uBQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AlegreyaSans-Medium" family="Alegreya Sans" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Share Your Location">
+                                                    <color key="titleColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="locationButtonPressed:" destination="Giv-gc-HJU" eventType="touchUpInside" id="Lef-s7-s0k"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovp-0N-ilo" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="114" width="335" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="1MV-ub-PjY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AlegreyaSans-Medium" family="Alegreya Sans" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Allow Access To Your Contacts">
+                                                    <color key="titleColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="contactsButtonPressed:" destination="Giv-gc-HJU" eventType="touchUpInside" id="zje-sr-UAA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FS-az-1aM" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="171" width="335" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="deU-R4-6xL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AlegreyaSans-Medium" family="Alegreya Sans" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Allow Access To Camera">
+                                                    <color key="titleColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cameraButtonPressed:" destination="Giv-gc-HJU" eventType="touchUpInside" id="0P8-Wp-9qu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qa0-aa-M1p" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="228" width="335" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="5Nq-RW-pVl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AlegreyaSans-Medium" family="Alegreya Sans" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Allow Access To Microphone">
+                                                    <color key="titleColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="microphoneButtonPressed:" destination="Giv-gc-HJU" eventType="touchUpInside" id="A7R-Fk-RcW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W93-jY-5wd" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="285" width="335" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="GJD-6S-cKw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AlegreyaSans-Medium" family="Alegreya Sans" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Allow Access To Your Photos">
+                                                    <color key="titleColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="photosButtonPressed:" destination="Giv-gc-HJU" eventType="touchUpInside" id="eK4-Ue-cXz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mLK-cr-I6q" firstAttribute="top" secondItem="gnq-l8-6dY" secondAttribute="top" id="1Zd-bE-OE6"/>
+                                    <constraint firstAttribute="bottom" secondItem="mLK-cr-I6q" secondAttribute="bottom" id="TJx-Sx-IZq"/>
+                                    <constraint firstItem="mLK-cr-I6q" firstAttribute="leading" secondItem="gnq-l8-6dY" secondAttribute="leading" id="tu9-v3-ugZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="mLK-cr-I6q" secondAttribute="trailing" id="ude-K7-xTN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gnq-l8-6dY" firstAttribute="leading" secondItem="cNS-QP-rf7" secondAttribute="leading" constant="20" id="02t-BH-Rpy"/>
+                            <constraint firstItem="gnq-l8-6dY" firstAttribute="centerX" secondItem="cNS-QP-rf7" secondAttribute="centerX" id="5xR-Rv-DdJ"/>
+                            <constraint firstItem="gnq-l8-6dY" firstAttribute="height" secondItem="cNS-QP-rf7" secondAttribute="height" id="ATh-Hz-fkY"/>
+                            <constraint firstItem="gnq-l8-6dY" firstAttribute="top" secondItem="cNS-QP-rf7" secondAttribute="top" id="FVt-lr-1as"/>
+                            <constraint firstAttribute="bottom" secondItem="gnq-l8-6dY" secondAttribute="bottom" id="Sll-oO-wMR"/>
+                            <constraint firstAttribute="trailing" secondItem="gnq-l8-6dY" secondAttribute="trailing" constant="20" id="jz6-rl-wda"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ATh-Hz-fkY"/>
+                            </mask>
+                        </variation>
+                    </scrollView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3a-GJ-CT4">
+                        <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                        <color key="backgroundColor" red="0.050980392156862744" green="0.54509803921568623" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="0Tz-9x-0TF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="24"/>
+                        <state key="normal" title="DONE">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="actionButtonPressed:" destination="Giv-gc-HJU" eventType="touchUpInside" id="CZ3-f9-Gw3"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="R3a-GJ-CT4" firstAttribute="width" secondItem="xbq-6z-R0w" secondAttribute="width" id="1DM-Ix-LGP"/>
+                    <constraint firstItem="R3a-GJ-CT4" firstAttribute="top" secondItem="cNS-QP-rf7" secondAttribute="bottom" constant="12" id="2pj-9n-sjF"/>
+                    <constraint firstItem="YKW-xV-7Yt" firstAttribute="top" secondItem="c4f-bj-FtD" secondAttribute="bottom" constant="28" id="Ar1-SQ-cIR"/>
+                    <constraint firstItem="c4f-bj-FtD" firstAttribute="centerX" secondItem="xbq-6z-R0w" secondAttribute="centerX" id="GcD-3A-zsI"/>
+                    <constraint firstItem="R3a-GJ-CT4" firstAttribute="centerX" secondItem="xbq-6z-R0w" secondAttribute="centerX" id="Mwb-N9-v3S"/>
+                    <constraint firstItem="c4f-bj-FtD" firstAttribute="width" secondItem="xbq-6z-R0w" secondAttribute="width" multiplier="0.9" id="P1G-Du-xue"/>
+                    <constraint firstItem="cNS-QP-rf7" firstAttribute="centerX" secondItem="xbq-6z-R0w" secondAttribute="centerX" id="QHO-Ir-VXN"/>
+                    <constraint firstItem="YKW-xV-7Yt" firstAttribute="centerX" secondItem="xbq-6z-R0w" secondAttribute="centerX" id="SSs-EE-LVW"/>
+                    <constraint firstItem="cNS-QP-rf7" firstAttribute="top" secondItem="YKW-xV-7Yt" secondAttribute="bottom" constant="20" id="SpX-mV-VGU"/>
+                    <constraint firstItem="c4f-bj-FtD" firstAttribute="top" secondItem="bnQ-2B-jGx" secondAttribute="bottom" constant="8" id="ai8-j6-vUY"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="YKW-xV-7Yt" secondAttribute="trailing" constant="12" id="bS0-T4-rqW"/>
+                    <constraint firstItem="dyv-i1-khM" firstAttribute="top" secondItem="R3a-GJ-CT4" secondAttribute="bottom" id="eAa-IU-dlx"/>
+                    <constraint firstItem="cNS-QP-rf7" firstAttribute="width" secondItem="xbq-6z-R0w" secondAttribute="width" id="nGt-qH-fXF"/>
+                    <constraint firstItem="YKW-xV-7Yt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xbq-6z-R0w" secondAttribute="leadingMargin" constant="12" id="zQd-nU-ttP"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="actionButton" destination="R3a-GJ-CT4" id="JIb-S7-4jD"/>
+                <outlet property="cameraButton" destination="9FS-az-1aM" id="geT-gF-YKu"/>
+                <outlet property="contactsButton" destination="ovp-0N-ilo" id="bFh-7T-Son"/>
+                <outlet property="locationButton" destination="3RS-oM-hUv" id="oow-vW-Ljz"/>
+                <outlet property="microphoneButton" destination="qa0-aa-M1p" id="cKe-ft-gWn"/>
+                <outlet property="notificationButton" destination="tSh-Yw-Cbt" id="Cvu-LU-BVl"/>
+                <outlet property="photosButton" destination="W93-jY-5wd" id="N98-Ia-wAw"/>
+            </connections>
+        </viewController>
+    </objects>
+</document>

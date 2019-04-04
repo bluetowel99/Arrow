@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="xce-sH-Opl">
+            <rect key="frame" x="0.0" y="0.0" width="38" height="87"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="MapsMarkerPOIBackground3D" translatesAutoresizingMaskIntoConstraints="NO" id="gPl-Xf-ZtM">
+                    <rect key="frame" x="1" y="0.0" width="36" height="65"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Oh1-dG-Kaw">
+                    <rect key="frame" x="6" y="9" width="26" height="64"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="MapMarkerFlameLit" translatesAutoresizingMaskIntoConstraints="NO" id="ymM-Di-07G">
+                            <rect key="frame" x="0.0" y="0.0" width="26" height="30"/>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="MapMarkerGlassLit" translatesAutoresizingMaskIntoConstraints="NO" id="qeu-RJ-n2R">
+                            <rect key="frame" x="0.0" y="34" width="26" height="30"/>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="MapMarkerOvalLit" translatesAutoresizingMaskIntoConstraints="NO" id="DYX-xF-Bds">
+                    <rect key="frame" x="0.0" y="77" width="38" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="N82-EC-cp0"/>
+                        <constraint firstAttribute="width" constant="38" id="ohW-44-Lcc"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DYX-xF-Bds" secondAttribute="trailing" id="IFX-XF-zEC"/>
+                <constraint firstItem="DYX-xF-Bds" firstAttribute="leading" secondItem="xce-sH-Opl" secondAttribute="leading" id="IGF-ug-Wq0"/>
+                <constraint firstItem="Oh1-dG-Kaw" firstAttribute="centerX" secondItem="xce-sH-Opl" secondAttribute="centerX" id="NYv-1S-9RG"/>
+                <constraint firstAttribute="trailing" secondItem="DYX-xF-Bds" secondAttribute="trailing" id="OGN-dr-EQK"/>
+                <constraint firstItem="DYX-xF-Bds" firstAttribute="top" secondItem="gPl-Xf-ZtM" secondAttribute="bottom" constant="12" id="ObL-uk-BAI"/>
+                <constraint firstItem="DYX-xF-Bds" firstAttribute="top" secondItem="qeu-RJ-n2R" secondAttribute="bottom" constant="4" id="PTb-gZ-GrB"/>
+                <constraint firstItem="gPl-Xf-ZtM" firstAttribute="centerX" secondItem="xce-sH-Opl" secondAttribute="centerX" id="bOY-UQ-hKg"/>
+                <constraint firstItem="DYX-xF-Bds" firstAttribute="leading" secondItem="xce-sH-Opl" secondAttribute="leading" id="dn8-Q4-JW3"/>
+                <constraint firstAttribute="bottom" secondItem="DYX-xF-Bds" secondAttribute="bottom" id="veT-i7-msg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="41" y="41.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MapMarkerFlameLit" width="22" height="30"/>
+        <image name="MapMarkerGlassLit" width="26" height="30"/>
+        <image name="MapMarkerOvalLit" width="38" height="10"/>
+        <image name="MapsMarkerPOIBackground3D" width="36" height="65"/>
+    </resources>
+</document>

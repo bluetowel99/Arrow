@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-ExtraBold.otf">
+            <string>AlegreyaSans-ExtraBold</string>
+        </array>
+        <array key="WorkSans-Black.otf">
+            <string>WorkSans-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--HelpVC-->
+        <scene sceneID="GHe-Cd-Na3">
+            <objects>
+                <viewController storyboardIdentifier="HelpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Q1-Lo-LaN" customClass="HelpVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sWH-vH-bue"/>
+                        <viewControllerLayoutGuide type="bottom" id="CYq-Ml-4nv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qWn-RV-5ds">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PoU-PN-Ods" userLabel="Centered Content">
+                                <rect key="frame" x="47" y="74" width="281" height="385.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ExclamationCircularIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Zk4-P2-fC4">
+                                        <rect key="frame" x="92" y="0.0" width="97" height="97"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Zk4-P2-fC4" secondAttribute="height" multiplier="1:1" id="7qP-M7-qKL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need Help?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPH-2i-fIS">
+                                        <rect key="frame" x="0.0" y="123" width="281" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="WorkSans-Black" family="Work Sans" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0W-R3-eMR">
+                                        <rect key="frame" x="0.0" y="178.5" width="281" height="130"/>
+                                        <string key="text">If you need help using Arrow or are experiencing issues with the app, please feel free to contact us by tapping the button below. We welcome any feedback as we try to build the best user experience possible!</string>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="18"/>
+                                        <color key="textColor" red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRx-yN-Cme" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="340.5" width="281" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="sQd-q5-9Xr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="21"/>
+                                        <state key="normal" title="Email Us">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="enabledBorderColor">
+                                                <color key="value" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="emailButtonPressed:" destination="5Q1-Lo-LaN" eventType="touchUpInside" id="vpY-tu-aCv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="NRx-yN-Cme" firstAttribute="leading" secondItem="PoU-PN-Ods" secondAttribute="leading" id="03s-Fe-bbX"/>
+                                    <constraint firstAttribute="trailing" secondItem="c0W-R3-eMR" secondAttribute="trailing" id="H1h-qg-q4p"/>
+                                    <constraint firstItem="Zk4-P2-fC4" firstAttribute="centerX" secondItem="PoU-PN-Ods" secondAttribute="centerX" id="Tah-gA-SLU"/>
+                                    <constraint firstItem="NRx-yN-Cme" firstAttribute="top" secondItem="c0W-R3-eMR" secondAttribute="bottom" constant="32" id="UaL-cf-4TW"/>
+                                    <constraint firstAttribute="bottom" secondItem="NRx-yN-Cme" secondAttribute="bottom" id="VlM-kB-huP"/>
+                                    <constraint firstAttribute="trailing" secondItem="NRx-yN-Cme" secondAttribute="trailing" id="Zof-0V-JsM"/>
+                                    <constraint firstItem="c0W-R3-eMR" firstAttribute="top" secondItem="YPH-2i-fIS" secondAttribute="bottom" constant="26" id="afP-Fu-iQP"/>
+                                    <constraint firstAttribute="trailing" secondItem="YPH-2i-fIS" secondAttribute="trailing" id="k8S-r6-xbd"/>
+                                    <constraint firstItem="c0W-R3-eMR" firstAttribute="leading" secondItem="PoU-PN-Ods" secondAttribute="leading" id="nUe-Sq-kXG"/>
+                                    <constraint firstItem="YPH-2i-fIS" firstAttribute="top" secondItem="Zk4-P2-fC4" secondAttribute="bottom" constant="26" id="ro4-CS-xdY"/>
+                                    <constraint firstItem="YPH-2i-fIS" firstAttribute="leading" secondItem="PoU-PN-Ods" secondAttribute="leading" id="uII-wn-F2n"/>
+                                    <constraint firstItem="Zk4-P2-fC4" firstAttribute="top" secondItem="PoU-PN-Ods" secondAttribute="top" id="yuw-fu-6v4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PoU-PN-Ods" firstAttribute="centerY" secondItem="qWn-RV-5ds" secondAttribute="centerY" multiplier="0.8" id="2ok-d2-QOf"/>
+                            <constraint firstItem="PoU-PN-Ods" firstAttribute="centerX" secondItem="qWn-RV-5ds" secondAttribute="centerX" id="7C1-tZ-L55"/>
+                            <constraint firstItem="PoU-PN-Ods" firstAttribute="width" secondItem="qWn-RV-5ds" secondAttribute="width" multiplier="0.75" id="dux-CP-xYr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IcK-3m-1NS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23" y="173"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ExclamationCircularIcon" width="97" height="97"/>
+    </resources>
+</document>

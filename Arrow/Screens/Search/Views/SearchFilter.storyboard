@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-ExtraBold.otf">
+            <string>AlegreyaSans-ExtraBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Search FilterVC-->
+        <scene sceneID="sef-E3-J4n">
+            <objects>
+                <viewController storyboardIdentifier="SearchFilterVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uU0-MH-dqO" customClass="SearchFilterVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e76-5V-xRa"/>
+                        <viewControllerLayoutGuide type="bottom" id="obU-cm-wik"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jWT-Ky-5KP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLG-o5-vBL">
+                                <rect key="frame" x="13" y="14" width="349" height="598"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="yjT-hy-dYo" userLabel="Content Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="349" height="328"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQL-rt-tda" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="349" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="VgL-Rv-w0i"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="16"/>
+                                                <state key="normal" title="Show Open Now">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="6od-wF-Son">
+                                                <rect key="frame" x="0.0" y="54" width="349" height="42"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6G-Eh-08n" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="42"/>
+                                                        <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="22"/>
+                                                        <state key="normal" title="$">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eea-Kv-o0B" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                        <rect key="frame" x="90.5" y="0.0" width="78" height="42"/>
+                                                        <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="22"/>
+                                                        <state key="normal" title="$$">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUv-d6-qh9" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                        <rect key="frame" x="180.5" y="0.0" width="78.5" height="42"/>
+                                                        <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="22"/>
+                                                        <state key="normal" title="$$$">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZX-Xx-rHI" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                        <rect key="frame" x="271" y="0.0" width="78" height="42"/>
+                                                        <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="22"/>
+                                                        <state key="normal" title="$$$$">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="shh-SI-DPq"/>
+                                                </constraints>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0J-1o-VCU" userLabel="SortBy Button Group">
+                                                <rect key="frame" x="0.0" y="108" width="349" height="42"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyg-Zy-6Dq" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="349" height="42"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="42" id="IKy-yg-kek"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="16"/>
+                                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                                        <state key="normal" title="Sort By">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DropDownArrowDark" translatesAutoresizingMaskIntoConstraints="NO" id="mIN-px-2YJ">
+                                                        <rect key="frame" x="311" y="15" width="20" height="12"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="mIN-px-2YJ" secondAttribute="height" multiplier="28:17" id="k6L-TW-oDZ"/>
+                                                            <constraint firstAttribute="width" constant="20" id="x9s-UT-hCo"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="mIN-px-2YJ" firstAttribute="centerY" secondItem="dyg-Zy-6Dq" secondAttribute="centerY" id="7Tz-vZ-vpN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dyg-Zy-6Dq" secondAttribute="bottom" id="Bus-Ql-aGC"/>
+                                                    <constraint firstItem="mIN-px-2YJ" firstAttribute="trailing" secondItem="dyg-Zy-6Dq" secondAttribute="trailing" constant="-18" id="GKT-0T-FM7"/>
+                                                    <constraint firstItem="dyg-Zy-6Dq" firstAttribute="leading" secondItem="W0J-1o-VCU" secondAttribute="leading" id="a3N-lp-bhU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dyg-Zy-6Dq" secondAttribute="trailing" id="eQa-8K-Gh2"/>
+                                                    <constraint firstItem="dyg-Zy-6Dq" firstAttribute="top" secondItem="W0J-1o-VCU" secondAttribute="top" id="lqj-af-wvM"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="qet-3d-nbv">
+                                                <rect key="frame" x="0.0" y="162" width="349" height="50"/>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zM8-S3-tH7" userLabel="Distance Button Group">
+                                                <rect key="frame" x="0.0" y="224" width="349" height="42"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5c-VE-3w0" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="349" height="42"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="42" id="dIT-jI-Ceq"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="16"/>
+                                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                                        <state key="normal" title="Distance">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DropDownArrowDark" translatesAutoresizingMaskIntoConstraints="NO" id="gw7-wT-igN">
+                                                        <rect key="frame" x="311" y="15" width="20" height="12"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="Zyi-fx-yFp"/>
+                                                            <constraint firstAttribute="width" secondItem="gw7-wT-igN" secondAttribute="height" multiplier="28:17" id="ktK-u6-CvQ"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="gw7-wT-igN" firstAttribute="centerY" secondItem="q5c-VE-3w0" secondAttribute="centerY" id="IJM-BW-Elq"/>
+                                                    <constraint firstItem="gw7-wT-igN" firstAttribute="trailing" secondItem="q5c-VE-3w0" secondAttribute="trailing" constant="-18" id="Y2I-x1-JpV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="q5c-VE-3w0" secondAttribute="bottom" id="Z7p-gm-1cr"/>
+                                                    <constraint firstItem="q5c-VE-3w0" firstAttribute="top" secondItem="zM8-S3-tH7" secondAttribute="top" id="edU-iB-vIa"/>
+                                                    <constraint firstAttribute="trailing" secondItem="q5c-VE-3w0" secondAttribute="trailing" id="mof-5f-Hps"/>
+                                                    <constraint firstItem="q5c-VE-3w0" firstAttribute="leading" secondItem="zM8-S3-tH7" secondAttribute="leading" id="tSJ-Yb-qV1"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="atT-Dk-A1I">
+                                                <rect key="frame" x="0.0" y="278" width="349" height="50"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="yjT-hy-dYo" secondAttribute="bottom" id="7cY-yN-wXV"/>
+                                    <constraint firstAttribute="trailing" secondItem="yjT-hy-dYo" secondAttribute="trailing" id="Amr-XD-IXY"/>
+                                    <constraint firstItem="yjT-hy-dYo" firstAttribute="width" secondItem="VLG-o5-vBL" secondAttribute="width" id="Jsl-je-no8"/>
+                                    <constraint firstItem="yjT-hy-dYo" firstAttribute="top" secondItem="VLG-o5-vBL" secondAttribute="top" id="TDx-Yx-Kjg"/>
+                                    <constraint firstItem="yjT-hy-dYo" firstAttribute="leading" secondItem="VLG-o5-vBL" secondAttribute="leading" id="ddP-Zu-HRJ"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EH1-8m-7g7">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="z9l-mi-FNy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="22"/>
+                                <state key="normal" title="APPLY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="applyButtonPressed:" destination="uU0-MH-dqO" eventType="touchUpInside" id="t9Y-xa-pjs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VLG-o5-vBL" firstAttribute="top" secondItem="jWT-Ky-5KP" secondAttribute="top" constant="14" id="0dS-rg-q5w"/>
+                            <constraint firstItem="VLG-o5-vBL" firstAttribute="width" secondItem="jWT-Ky-5KP" secondAttribute="width" multiplier="0.93" id="8TE-xZ-8xm"/>
+                            <constraint firstAttribute="trailing" secondItem="EH1-8m-7g7" secondAttribute="trailing" id="Aav-T0-E4E"/>
+                            <constraint firstItem="EH1-8m-7g7" firstAttribute="top" secondItem="VLG-o5-vBL" secondAttribute="bottom" id="W6A-tI-02V"/>
+                            <constraint firstItem="obU-cm-wik" firstAttribute="top" secondItem="EH1-8m-7g7" secondAttribute="bottom" id="WTJ-ya-86Q"/>
+                            <constraint firstItem="VLG-o5-vBL" firstAttribute="centerX" secondItem="jWT-Ky-5KP" secondAttribute="centerX" id="Xjr-ZE-ZOb"/>
+                            <constraint firstItem="EH1-8m-7g7" firstAttribute="leading" secondItem="jWT-Ky-5KP" secondAttribute="leading" id="alR-ER-pM4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="applyButton" destination="EH1-8m-7g7" id="bqn-18-DqL"/>
+                        <outlet property="distanceArrowImageView" destination="gw7-wT-igN" id="PZK-gB-ljV"/>
+                        <outlet property="distanceButton" destination="q5c-VE-3w0" id="u3a-eI-AOh"/>
+                        <outlet property="distanceStackView" destination="atT-Dk-A1I" id="JKI-33-ACb"/>
+                        <outlet property="openNowButton" destination="IQL-rt-tda" id="YKO-Ll-exd"/>
+                        <outlet property="pricesStackView" destination="6od-wF-Son" id="3te-HS-RUs"/>
+                        <outlet property="sortByArrowImageView" destination="mIN-px-2YJ" id="61l-tX-yed"/>
+                        <outlet property="sortByButton" destination="dyg-Zy-6Dq" id="wAl-77-4zI"/>
+                        <outlet property="sortByStackView" destination="qet-3d-nbv" id="lYJ-ir-cbz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oKM-aA-Lk2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DropDownArrowDark" width="28" height="17"/>
+    </resources>
+</document>

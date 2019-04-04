@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-Bold.otf">
+            <string>AlegreyaSans-Bold</string>
+        </array>
+        <array key="AlegreyaSans-ExtraBold.otf">
+            <string>AlegreyaSans-ExtraBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Messages Location Sharing Search TableVC-->
+        <scene sceneID="4qm-BX-Omz">
+            <objects>
+                <tableViewController storyboardIdentifier="MessagesLocationSharingSearchTableVC" id="5Wt-IJ-VdO" customClass="MessagesLocationSharingSearchTableVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wSl-De-6hv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessagesLocationShareCell" rowHeight="64" id="3kl-20-Ean" customClass="MessagesLocationShareCell" customModule="Arrow" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="64"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3kl-20-Ean" id="zG3-Vu-4SL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" image="LocationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="g67-wG-jtm">
+                                            <rect key="frame" x="26" y="8" width="17" height="24"/>
+                                            <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.72156862749999995" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="deviceRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="17" id="J2O-yx-nAh"/>
+                                                <constraint firstAttribute="height" constant="24" id="c4f-he-gRj"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="1110 Jamboree Rd, Irvine, CA 92606" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLO-aj-LYB">
+                                            <rect key="frame" x="55" y="5" width="315" height="21"/>
+                                            <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="QT1-7B-fOs"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="1110 Jamboree Rd, Irvine, CA 92606" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMk-cq-j5g">
+                                            <rect key="frame" x="55" y="30" width="307" height="21"/>
+                                            <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="1Gd-Ta-fiE"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="JRR-cf-UuP"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="16"/>
+                                            <color key="textColor" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="LLO-aj-LYB" firstAttribute="top" secondItem="zG3-Vu-4SL" secondAttribute="top" constant="5" id="IZY-IZ-UFF"/>
+                                        <constraint firstItem="g67-wG-jtm" firstAttribute="top" secondItem="zG3-Vu-4SL" secondAttribute="topMargin" id="YXQ-eA-SHN"/>
+                                        <constraint firstAttribute="trailing" secondItem="LLO-aj-LYB" secondAttribute="trailing" constant="5" id="ccg-rY-PDV"/>
+                                        <constraint firstItem="LLO-aj-LYB" firstAttribute="leading" secondItem="g67-wG-jtm" secondAttribute="trailing" constant="12" id="fOs-Rd-7YA"/>
+                                        <constraint firstItem="VMk-cq-j5g" firstAttribute="leading" secondItem="g67-wG-jtm" secondAttribute="trailing" constant="12" id="jr5-wp-MYN"/>
+                                        <constraint firstItem="VMk-cq-j5g" firstAttribute="top" secondItem="LLO-aj-LYB" secondAttribute="bottom" constant="4" id="tOD-81-RAz"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="VMk-cq-j5g" secondAttribute="trailing" constant="5" id="tOe-DL-TvL"/>
+                                        <constraint firstItem="g67-wG-jtm" firstAttribute="leading" secondItem="zG3-Vu-4SL" secondAttribute="leading" constant="26" id="zXk-kV-V8s"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="locationAddressShareLabel" destination="VMk-cq-j5g" id="hBu-jn-QhQ"/>
+                                    <outlet property="locationShareLabel" destination="LLO-aj-LYB" id="DAP-3P-JR5"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="5Wt-IJ-VdO" id="RsY-w5-fMc"/>
+                            <outlet property="delegate" destination="5Wt-IJ-VdO" id="5LI-wW-MVH"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sBd-q9-dR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2437.5999999999999" y="1174.3628185907048"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LocationIcon" width="17" height="21"/>
+    </resources>
+</document>

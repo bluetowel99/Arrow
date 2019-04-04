@@ -1,0 +1,61 @@
+/* 
+  Signup.strings
+  Arrow
+
+  Created by Kiarash on 12/2/16.
+  Copyright © 2016 Arrow Application, LLC. All rights reserved.
+*/
+
+
+// Signup's Phone Number Screen
+
+
+/* Phone field's placeholder text. */
+
+"phone-number.phone-field.placeholder" = "What's your phone number?";
+
+/* Next button's title. */
+
+"phone-number.next-button.title" = "NEXT";
+
+
+
+// Signup's Code Verification Screen
+
+
+/* Phone field's placeholder text. */
+
+"verify-code.verification-code-field.placeholder" = "Enter verification code...";
+
+/* Next button's title. */
+
+"verify-code.next-button.title" = "NEXT";
+
+
+
+// Signup Form Screen
+
+
+/* First name placeholder. */
+
+"form.first-name-field.placeholder" = "First name";
+
+/* Last name placeholder. */
+
+"form.last-name-field.placeholder" = "Last name";
+
+/* Email placeholder. */
+
+"form.email-field.placeholder" = "What's your email?";
+
+/* Password placeholder. */
+
+"form.password-field.placeholder" = "What password would you like?";
+
+/* Confirm password placeholder. */
+
+"form.confirm-password-field.placeholder" = "Confirm password";
+
+/* Next button's title. */
+
+"form.next-button.title" = "NEXT";

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-Bold.otf">
+            <string>AlegreyaSans-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Messages Media LocationVC-->
+        <scene sceneID="6hG-nQ-khA">
+            <objects>
+                <viewController storyboardIdentifier="MessagesMediaLocationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Ao-bR-xvz" customClass="MessagesMediaLocationVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BSM-CS-ZFr"/>
+                        <viewControllerLayoutGuide type="bottom" id="tVA-2Z-k5i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="92r-Q5-0Tg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHA-GF-bs3" userLabel="Search View">
+                                <rect key="frame" x="15" y="32" width="345" height="39"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RoundLocationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="y5w-Om-Lhn">
+                                        <rect key="frame" x="10" y="9" width="19" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="4Jq-oE-6JN"/>
+                                            <constraint firstAttribute="height" constant="22" id="bQw-vC-mru"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter an address or place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="04X-Ql-JB2">
+                                        <rect key="frame" x="39" y="6" width="298" height="27"/>
+                                        <color key="textColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="04X-Ql-JB2" secondAttribute="trailing" constant="8" id="1JM-Hk-PYL"/>
+                                    <constraint firstItem="y5w-Om-Lhn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aHA-GF-bs3" secondAttribute="top" id="1NV-9i-J3a"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="y5w-Om-Lhn" secondAttribute="bottom" id="AO5-Ji-CPR"/>
+                                    <constraint firstItem="04X-Ql-JB2" firstAttribute="leading" secondItem="y5w-Om-Lhn" secondAttribute="trailing" constant="10" id="QbS-lv-OI2"/>
+                                    <constraint firstItem="y5w-Om-Lhn" firstAttribute="centerY" secondItem="aHA-GF-bs3" secondAttribute="centerY" id="SKj-6r-b27"/>
+                                    <constraint firstAttribute="bottom" secondItem="04X-Ql-JB2" secondAttribute="bottom" constant="6" id="TAA-zc-vfp"/>
+                                    <constraint firstItem="04X-Ql-JB2" firstAttribute="top" secondItem="aHA-GF-bs3" secondAttribute="top" constant="6" id="i1K-mN-DHy"/>
+                                    <constraint firstItem="y5w-Om-Lhn" firstAttribute="leading" secondItem="aHA-GF-bs3" secondAttribute="leading" constant="10" id="zUH-xj-JyD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cp3-iK-jDq" userLabel="Current Location View">
+                                <rect key="frame" x="15" y="87" width="345" height="30"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CurrentLocationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="CvR-jE-iUN">
+                                        <rect key="frame" x="12" y="7" width="16" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="LVD-Q1-2D7"/>
+                                            <constraint firstAttribute="width" constant="16" id="XGL-xu-5kP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FLc-Vi-tVy">
+                                        <rect key="frame" x="42" y="4" width="295" height="22"/>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="18"/>
+                                        <color key="textColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FLc-Vi-tVy" secondAttribute="trailing" constant="8" id="0GX-bx-it0"/>
+                                    <constraint firstItem="CvR-jE-iUN" firstAttribute="centerY" secondItem="cp3-iK-jDq" secondAttribute="centerY" id="0ch-0K-OXW"/>
+                                    <constraint firstItem="FLc-Vi-tVy" firstAttribute="leading" secondItem="CvR-jE-iUN" secondAttribute="trailing" constant="14" id="15k-IC-BPV"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CvR-jE-iUN" secondAttribute="bottom" id="7IZ-tW-0Pr"/>
+                                    <constraint firstItem="CvR-jE-iUN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cp3-iK-jDq" secondAttribute="top" id="8mT-Ao-8fN"/>
+                                    <constraint firstItem="FLc-Vi-tVy" firstAttribute="top" secondItem="cp3-iK-jDq" secondAttribute="top" constant="4" id="BXJ-4w-05s"/>
+                                    <constraint firstAttribute="bottom" secondItem="FLc-Vi-tVy" secondAttribute="bottom" constant="4" id="GmI-wE-wzx"/>
+                                    <constraint firstItem="CvR-jE-iUN" firstAttribute="leading" secondItem="cp3-iK-jDq" secondAttribute="leading" constant="12" id="qX3-6f-oUi"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D2x-gC-8Xb">
+                                <rect key="frame" x="0.0" y="79" width="375" height="588"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aHA-GF-bs3" firstAttribute="width" secondItem="92r-Q5-0Tg" secondAttribute="width" multiplier="0.92" id="0Gj-l8-dfV"/>
+                            <constraint firstItem="aHA-GF-bs3" firstAttribute="top" secondItem="BSM-CS-ZFr" secondAttribute="bottom" constant="12" id="1Ce-AV-wzR"/>
+                            <constraint firstItem="D2x-gC-8Xb" firstAttribute="width" secondItem="92r-Q5-0Tg" secondAttribute="width" id="HK0-7r-Trb"/>
+                            <constraint firstItem="tVA-2Z-k5i" firstAttribute="top" secondItem="D2x-gC-8Xb" secondAttribute="bottom" id="J1j-U1-2qy"/>
+                            <constraint firstItem="D2x-gC-8Xb" firstAttribute="top" secondItem="aHA-GF-bs3" secondAttribute="bottom" constant="8" id="TK1-vB-B1Z"/>
+                            <constraint firstAttribute="trailing" secondItem="D2x-gC-8Xb" secondAttribute="trailing" id="U1h-nd-UF4"/>
+                            <constraint firstItem="aHA-GF-bs3" firstAttribute="centerX" secondItem="92r-Q5-0Tg" secondAttribute="centerX" id="W8v-Uw-asw"/>
+                            <constraint firstItem="cp3-iK-jDq" firstAttribute="top" secondItem="aHA-GF-bs3" secondAttribute="bottom" constant="16" id="ZJ2-Rl-7yU"/>
+                            <constraint firstItem="cp3-iK-jDq" firstAttribute="centerX" secondItem="92r-Q5-0Tg" secondAttribute="centerX" id="ph0-uO-zDm"/>
+                            <constraint firstItem="cp3-iK-jDq" firstAttribute="width" secondItem="aHA-GF-bs3" secondAttribute="width" id="uCR-7Z-q02"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentLocationLabel" destination="FLc-Vi-tVy" id="khb-FH-BR8"/>
+                        <outlet property="currentLocationView" destination="cp3-iK-jDq" id="rxU-X2-ewC"/>
+                        <outlet property="searchTextField" destination="04X-Ql-JB2" id="0H9-Sv-YpN"/>
+                        <outlet property="tableView" destination="D2x-gC-8Xb" id="5bZ-he-0wK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCl-CF-LpT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111.2" y="110.19490254872565"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CurrentLocationIcon" width="16" height="17"/>
+        <image name="RoundLocationIcon" width="19" height="22"/>
+    </resources>
+</document>

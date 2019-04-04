@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-ExtraBold.otf">
+            <string>AlegreyaSans-ExtraBold</string>
+        </array>
+        <array key="AlegreyaSans-Medium.otf">
+            <string>AlegreyaSans-Medium</string>
+        </array>
+        <array key="WorkSans-Black.otf">
+            <string>WorkSans-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Messaging Poll CreationVC-->
+        <scene sceneID="0LP-xA-dsR">
+            <objects>
+                <viewController storyboardIdentifier="MessagingPollCreationVC" id="qbk-HJ-AFk" customClass="MessagingPollCreationVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tc6-gZ-IZx"/>
+                        <viewControllerLayoutGuide type="bottom" id="MgE-6s-jlZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8FN-bh-mIa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VvF-d4-S44" customClass="ARFormTextField" customModule="Arrow" customModuleProvider="target">
+                                <rect key="frame" x="20" y="55" width="335" height="75.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Ask Your Question"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7N-mq-Uhe" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="eK8-vD-gtD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="24"/>
+                                <state key="normal" title="CREATE POLL">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressCreatePoll:" destination="qbk-HJ-AFk" eventType="touchUpInside" id="CAu-NW-fvO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poll A Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYM-OE-k3b">
+                                <rect key="frame" x="22" y="20" width="227.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qir-XB-mrR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-Black" family="Work Sans" pointSize="30"/>
+                                <color key="textColor" red="0.019607843137254902" green="0.2196078431372549" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsc-kF-Ef0">
+                                <rect key="frame" x="22" y="130.5" width="49" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="unQ-yh-nqD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="16"/>
+                                <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qWb-eE-fUR">
+                                <rect key="frame" x="0.0" y="161.5" width="375" height="450.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PollOptionTableViewCell" rowHeight="52" id="Nqd-3y-ehl" customClass="PollOptionTableViewCell" customModule="Arrow" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="52"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nqd-3y-ehl" id="dvj-cz-P71">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowPoll" translatesAutoresizingMaskIntoConstraints="NO" id="FtG-eh-VPV">
+                                                    <rect key="frame" x="22" y="0.0" width="28" height="51.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="28" id="MLw-H2-7za"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cs0-ZW-30B">
+                                                    <rect key="frame" x="294" y="0.0" width="44" height="51.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="ERU-kG-Tjt"/>
+                                                    </constraints>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="9"/>
+                                                    <state key="normal" image="cameraIconPoll"/>
+                                                    <connections>
+                                                        <action selector="takePictureAction:" destination="Nqd-3y-ehl" eventType="touchUpInside" id="ipG-bF-pZf"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uha-8W-VLC">
+                                                    <rect key="frame" x="338" y="0.0" width="37" height="51.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="37" id="vdq-Kv-a0w"/>
+                                                    </constraints>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
+                                                    <state key="normal" title="Button" image="deletePoll"/>
+                                                    <connections>
+                                                        <action selector="deleteAction:" destination="Nqd-3y-ehl" eventType="touchUpInside" id="9Mt-hP-eoh"/>
+                                                    </connections>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Option 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRH-CF-0rV">
+                                                    <rect key="frame" x="50" y="0.0" width="244" height="51.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="AlegreyaSans-Medium" family="Alegreya Sans" pointSize="24"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                </textField>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOF-ZG-QtM">
+                                                    <rect key="frame" x="55" y="49.5" width="234" height="2"/>
+                                                    <color key="backgroundColor" red="0.81568627450980391" green="0.82352941176470584" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="2" id="s5a-C7-V51"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="duH-iV-kXO">
+                                                    <rect key="frame" x="299" y="14.5" width="35" height="35"/>
+                                                    <color key="backgroundColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="AnN-sy-aSA"/>
+                                                        <constraint firstAttribute="height" constant="35" id="c6N-rw-7O6"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Uha-8W-VLC" secondAttribute="bottom" id="27T-gf-zN9"/>
+                                                <constraint firstItem="Uha-8W-VLC" firstAttribute="top" secondItem="dvj-cz-P71" secondAttribute="top" id="5Y6-x5-xHH"/>
+                                                <constraint firstItem="yOF-ZG-QtM" firstAttribute="leading" secondItem="FtG-eh-VPV" secondAttribute="trailing" constant="5" id="BNM-TN-zvr"/>
+                                                <constraint firstAttribute="bottom" secondItem="FtG-eh-VPV" secondAttribute="bottom" id="H5x-qU-viK"/>
+                                                <constraint firstAttribute="bottom" secondItem="bRH-CF-0rV" secondAttribute="bottom" id="LNH-Mq-g0J"/>
+                                                <constraint firstItem="duH-iV-kXO" firstAttribute="leading" secondItem="bRH-CF-0rV" secondAttribute="trailing" constant="5" id="MVR-sD-yua"/>
+                                                <constraint firstItem="Cs0-ZW-30B" firstAttribute="leading" secondItem="yOF-ZG-QtM" secondAttribute="trailing" constant="5" id="NVK-fr-F7b"/>
+                                                <constraint firstItem="Cs0-ZW-30B" firstAttribute="top" secondItem="dvj-cz-P71" secondAttribute="top" id="QRw-N1-jju"/>
+                                                <constraint firstAttribute="trailing" secondItem="Uha-8W-VLC" secondAttribute="trailing" id="Zql-LR-bOV"/>
+                                                <constraint firstAttribute="bottom" secondItem="Cs0-ZW-30B" secondAttribute="bottom" id="dBC-vl-oXW"/>
+                                                <constraint firstAttribute="bottom" secondItem="duH-iV-kXO" secondAttribute="bottom" constant="2" id="dfh-CT-dnU"/>
+                                                <constraint firstItem="FtG-eh-VPV" firstAttribute="leading" secondItem="dvj-cz-P71" secondAttribute="leading" constant="22" id="ds2-OA-57t"/>
+                                                <constraint firstAttribute="bottom" secondItem="yOF-ZG-QtM" secondAttribute="bottom" id="gkH-S8-sOp"/>
+                                                <constraint firstItem="bRH-CF-0rV" firstAttribute="top" secondItem="dvj-cz-P71" secondAttribute="top" id="ln4-S2-20v"/>
+                                                <constraint firstItem="Uha-8W-VLC" firstAttribute="leading" secondItem="Cs0-ZW-30B" secondAttribute="trailing" id="oB7-H8-oIl"/>
+                                                <constraint firstItem="bRH-CF-0rV" firstAttribute="leading" secondItem="FtG-eh-VPV" secondAttribute="trailing" id="ubM-y8-ecD"/>
+                                                <constraint firstItem="Cs0-ZW-30B" firstAttribute="leading" secondItem="bRH-CF-0rV" secondAttribute="trailing" id="uhn-7R-h3G"/>
+                                                <constraint firstItem="FtG-eh-VPV" firstAttribute="top" secondItem="dvj-cz-P71" secondAttribute="top" id="xc0-nV-Ch2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cameraButton" destination="Cs0-ZW-30B" id="8eI-N1-qtv"/>
+                                            <outlet property="deleteButton" destination="Uha-8W-VLC" id="prn-Ar-l49"/>
+                                            <outlet property="photoImageView" destination="duH-iV-kXO" id="dZ5-2b-zu3"/>
+                                            <outlet property="textTextField" destination="bRH-CF-0rV" id="XIg-r1-c8J"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PollNewOptionTableViewCell" rowHeight="67" id="eYo-5o-6jt" customClass="PollNewOptionTableViewCell" customModule="Arrow" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="80" width="375" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eYo-5o-6jt" id="xft-ji-3kh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Lf-UW-GSP">
+                                                    <rect key="frame" x="82.5" y="18" width="210" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="dWT-CX-zlb"/>
+                                                        <constraint firstAttribute="width" constant="210" id="tmv-IM-3Ch"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="17"/>
+                                                    <state key="normal" title="New Option">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="newOptionTapped:" destination="eYo-5o-6jt" eventType="touchUpInside" id="Bo2-lF-Z6g"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7Lf-UW-GSP" firstAttribute="centerX" secondItem="xft-ji-3kh" secondAttribute="centerX" id="rGE-kk-wBe"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7Lf-UW-GSP" secondAttribute="bottom" constant="0.5" id="til-DX-cCv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="optionButton" destination="7Lf-UW-GSP" id="Z8N-T9-akf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="qbk-HJ-AFk" id="Qf7-qy-kmL"/>
+                                    <outlet property="delegate" destination="qbk-HJ-AFk" id="mPe-Xo-Cgz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gsc-kF-Ef0" firstAttribute="top" secondItem="VvF-d4-S44" secondAttribute="bottom" id="2Ck-tb-6xa"/>
+                            <constraint firstItem="e7N-mq-Uhe" firstAttribute="leading" secondItem="8FN-bh-mIa" secondAttribute="leading" id="5aI-Nw-7TK"/>
+                            <constraint firstItem="gsc-kF-Ef0" firstAttribute="leading" secondItem="8FN-bh-mIa" secondAttribute="leading" constant="22" id="ByW-n7-Vt1"/>
+                            <constraint firstAttribute="trailing" secondItem="qWb-eE-fUR" secondAttribute="trailing" id="C3G-ie-KhK"/>
+                            <constraint firstItem="MgE-6s-jlZ" firstAttribute="top" secondItem="e7N-mq-Uhe" secondAttribute="bottom" id="CTV-7e-W62"/>
+                            <constraint firstItem="VvF-d4-S44" firstAttribute="top" secondItem="cYM-OE-k3b" secondAttribute="bottom" constant="5" id="Ilr-i5-xAQ"/>
+                            <constraint firstItem="VvF-d4-S44" firstAttribute="leading" secondItem="8FN-bh-mIa" secondAttribute="leading" constant="20" id="RcJ-zR-m4U"/>
+                            <constraint firstItem="qWb-eE-fUR" firstAttribute="top" secondItem="gsc-kF-Ef0" secondAttribute="bottom" constant="10" id="Zdl-Bk-IUy"/>
+                            <constraint firstAttribute="trailing" secondItem="VvF-d4-S44" secondAttribute="trailing" constant="20" id="cW7-8Q-5Ui"/>
+                            <constraint firstItem="qWb-eE-fUR" firstAttribute="leading" secondItem="8FN-bh-mIa" secondAttribute="leading" id="kU6-V8-Fdm"/>
+                            <constraint firstItem="cYM-OE-k3b" firstAttribute="top" secondItem="Tc6-gZ-IZx" secondAttribute="bottom" id="lV0-KH-N1f"/>
+                            <constraint firstItem="cYM-OE-k3b" firstAttribute="leading" secondItem="8FN-bh-mIa" secondAttribute="leading" constant="22" id="p0B-FC-2ko"/>
+                            <constraint firstAttribute="trailing" secondItem="e7N-mq-Uhe" secondAttribute="trailing" id="rAK-Uo-hj8"/>
+                            <constraint firstItem="e7N-mq-Uhe" firstAttribute="top" secondItem="qWb-eE-fUR" secondAttribute="bottom" id="rUN-9k-KPO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="createPollButton" destination="e7N-mq-Uhe" id="WVZ-up-r0k"/>
+                        <outlet property="inputAccessoryCreatePollButton" destination="xEe-5G-dB7" id="qzV-oy-InB"/>
+                        <outlet property="optionstableView" destination="qWb-eE-fUR" id="bLb-We-gzY"/>
+                        <outlet property="titleTextField" destination="VvF-d4-S44" id="qyh-JG-e45"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ek-KQ-VS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEe-5G-dB7" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                    <color key="backgroundColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="Tyd-Fg-Psp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="24"/>
+                    <state key="normal" title="SET LOCATION">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="158.77061469265368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowPoll" width="15" height="31"/>
+        <image name="cameraIconPoll" width="23" height="20"/>
+        <image name="deletePoll" width="23" height="23"/>
+    </resources>
+</document>

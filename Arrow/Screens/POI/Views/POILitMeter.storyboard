@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-Black.otf">
+            <string>AlegreyaSans-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Lit MeterVC-->
+        <scene sceneID="lSI-wt-472">
+            <objects>
+                <viewController storyboardIdentifier="POILitMeterVC" id="Jap-XN-FrN" customClass="POILitMeterVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3XM-cq-7Bx"/>
+                        <viewControllerLayoutGuide type="bottom" id="hR0-gl-IEa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="al9-xv-kkJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9z-LV-fxD" userLabel="Blurred View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9W-6Y-l2H" userLabel="Card View">
+                                <rect key="frame" x="24" y="69" width="327" height="572"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCn-yw-Bhc" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="572"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="breakfast" translatesAutoresizingMaskIntoConstraints="NO" id="yvg-1k-dQQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="126"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOW IS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjX-ME-D4W">
+                                                <rect key="frame" x="133" y="21" width="60" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AlegreyaSans-Black" family="Alegreya Sans" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLu-Ex-XxM" userLabel="CloseButton">
+                                                <rect key="frame" x="297" y="18" width="20" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <state key="normal" image="close_x"/>
+                                                <connections>
+                                                    <action selector="CloseAction:" destination="Jap-XN-FrN" eventType="touchDown" id="YWf-RC-7ch"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ih-aq-TQF" userLabel="LitThumbs View">
+                                                <rect key="frame" x="0.0" y="126" width="327" height="423"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlP-14-qtN" userLabel="UpButton" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                        <rect key="frame" x="7" y="7" width="313" height="191"/>
+                                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="lit_up_bg" backgroundImage="thumb_up"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="0"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="ThumbsUpAction:" destination="Jap-XN-FrN" eventType="touchDown" id="kyA-xL-XRq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumb_up" translatesAutoresizingMaskIntoConstraints="NO" id="QO4-Dv-sRT">
+                                                        <rect key="frame" x="127" y="60" width="73" height="85"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHs-TC-oRm" userLabel="DownButton" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                                        <rect key="frame" x="7" y="204" width="313" height="191"/>
+                                                        <color key="backgroundColor" red="0.71954495857805933" green="0.91470934018841898" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" image="lit_down_bg"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="0"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="ThumbsDownAction:" destination="Jap-XN-FrN" eventType="touchDown" id="0vR-6E-nh3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumb_down" translatesAutoresizingMaskIntoConstraints="NO" id="BPd-oJ-o4i">
+                                                        <rect key="frame" x="127" y="257" width="73" height="85"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="iHs-TC-oRm" firstAttribute="height" secondItem="tlP-14-qtN" secondAttribute="height" id="F0H-CG-LEF"/>
+                                                    <constraint firstItem="tlP-14-qtN" firstAttribute="leading" secondItem="0Ih-aq-TQF" secondAttribute="leading" constant="7" id="HbM-vB-Tvb"/>
+                                                    <constraint firstItem="tlP-14-qtN" firstAttribute="top" secondItem="0Ih-aq-TQF" secondAttribute="top" constant="7" id="LEM-AI-5Wf"/>
+                                                    <constraint firstItem="QO4-Dv-sRT" firstAttribute="centerY" secondItem="tlP-14-qtN" secondAttribute="centerY" id="RoN-va-m0g"/>
+                                                    <constraint firstItem="iHs-TC-oRm" firstAttribute="leading" secondItem="0Ih-aq-TQF" secondAttribute="leading" constant="7" id="VRB-gB-M7Z"/>
+                                                    <constraint firstItem="iHs-TC-oRm" firstAttribute="top" secondItem="tlP-14-qtN" secondAttribute="bottom" constant="6" id="XGd-BT-Ucb"/>
+                                                    <constraint firstItem="QO4-Dv-sRT" firstAttribute="centerX" secondItem="tlP-14-qtN" secondAttribute="centerX" id="lKk-1G-7d1"/>
+                                                    <constraint firstItem="tlP-14-qtN" firstAttribute="height" secondItem="0Ih-aq-TQF" secondAttribute="height" multiplier="0.5" constant="-21" id="pW1-wh-gqQ"/>
+                                                    <constraint firstItem="BPd-oJ-o4i" firstAttribute="centerX" secondItem="tlP-14-qtN" secondAttribute="centerX" id="qef-CG-Xzl"/>
+                                                    <constraint firstItem="tlP-14-qtN" firstAttribute="centerX" secondItem="0Ih-aq-TQF" secondAttribute="centerX" id="wS0-6B-d4q"/>
+                                                    <constraint firstItem="BPd-oJ-o4i" firstAttribute="centerY" secondItem="iHs-TC-oRm" secondAttribute="centerY" id="yPk-Ab-yv7"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Q's Billiard Club?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAe-SI-iJq">
+                                                <rect key="frame" x="14" y="34" width="299" height="92"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AlegreyaSans-Black" family="Alegreya Sans" pointSize="30"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="0Ih-aq-TQF" firstAttribute="trailing" secondItem="FCn-yw-Bhc" secondAttribute="trailing" id="QDs-kw-W7B"/>
+                                            <constraint firstItem="0Ih-aq-TQF" firstAttribute="top" secondItem="FCn-yw-Bhc" secondAttribute="top" constant="126" id="ief-gj-6gj"/>
+                                            <constraint firstItem="0Ih-aq-TQF" firstAttribute="bottom" secondItem="FCn-yw-Bhc" secondAttribute="bottom" constant="-23" id="kHU-1u-jAn"/>
+                                            <constraint firstItem="0Ih-aq-TQF" firstAttribute="leading" secondItem="FCn-yw-Bhc" secondAttribute="leading" id="ldB-jX-XXU"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="FCn-yw-Bhc" firstAttribute="top" secondItem="j9W-6Y-l2H" secondAttribute="top" id="SnK-j4-DJe"/>
+                                    <constraint firstItem="FCn-yw-Bhc" firstAttribute="leading" secondItem="j9W-6Y-l2H" secondAttribute="leading" id="jsr-hl-Bzy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j9W-6Y-l2H" firstAttribute="leading" secondItem="al9-xv-kkJ" secondAttribute="leadingMargin" constant="8" id="FY8-g1-Hfk"/>
+                            <constraint firstItem="j9W-6Y-l2H" firstAttribute="top" secondItem="3XM-cq-7Bx" secondAttribute="bottom" constant="49" id="YkE-R0-aMA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j9W-6Y-l2H" secondAttribute="trailing" constant="8" id="qTG-7b-All"/>
+                            <constraint firstItem="hR0-gl-IEa" firstAttribute="top" secondItem="j9W-6Y-l2H" secondAttribute="bottom" constant="26" id="xyr-Fm-6aw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blurredBackgroundView" destination="A9z-LV-fxD" id="7iw-wQ-67A"/>
+                        <outlet property="cardContainerView" destination="j9W-6Y-l2H" id="TX0-ao-gXB"/>
+                        <outlet property="placeImage" destination="yvg-1k-dQQ" id="eeU-gs-FuA"/>
+                        <outlet property="placeName" destination="OAe-SI-iJq" id="1a1-gl-ppo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Tr-hJ-OCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-572" y="90.404797601199405"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="breakfast" width="82" height="82"/>
+        <image name="close_x" width="14" height="14"/>
+        <image name="lit_down_bg" width="313" height="191"/>
+        <image name="lit_up_bg" width="313" height="191"/>
+        <image name="thumb_down" width="73" height="85"/>
+        <image name="thumb_up" width="73" height="85"/>
+    </resources>
+</document>

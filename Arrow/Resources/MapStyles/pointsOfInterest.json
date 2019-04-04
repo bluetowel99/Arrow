@@ -1,0 +1,20 @@
+{
+  "array": [
+    {
+      "latitude": 33.650331,
+      "longitude": -117.745124,
+      "name": "Yard House",
+      "encodedPaths": "yhklEbetmUMGFWKEBI]MMgACAAMBA?@\\I?AD?BRJABR??PrAA?",
+      "level": "Lit",
+      "type": "Bar"
+    },
+    {
+      "latitude": 33.652243,
+      "longitude": -117.746517,
+      "name": "Irvine Improv Comedy Club",
+      "encodedPaths": "otklEhltmUNFBEGQ??EOBAGOOIADGCAAEAE@EICBIE@EEEKNCD@?ADLF?@A@BNZC?DHA?DC@?@??`@E?F@?@F@??DK@",
+      "level": "DecentScene",
+      "type": "Bar"
+    }
+  ]
+}

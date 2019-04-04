@@ -1,0 +1,30 @@
+/* 
+  Maps.strings
+  Arrow
+
+  Created by Jacob Hazelgrove on 12/19/16.
+  Copyright © 2016 Arrow Application, LLC. All rights reserved.
+*/
+
+
+// Memmber marker info view strings
+
+/* Chat button's title. */
+
+"maps.chat-button.title" = "Chat";
+
+/* Edit profile button's title. */
+
+"maps.edit-profile-button.title" = "EDIT PROFILE";
+
+/* View profile button's title. */
+
+"maps.view-profile-button.title" = "VIEW PROFILE";
+
+/* Turn Off Location Sharing button's title. */
+
+"maps.turn-off-location-sharing-button.title" = "Turn Off Location Sharing";
+
+/* Turn On Location Sharing button's title. */
+
+"maps.turn-on-location-sharing-button.title" = "Turn On Location Sharing";

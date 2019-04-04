@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-Bold.otf">
+            <string>AlegreyaSans-Bold</string>
+        </array>
+        <array key="AlegreyaSans-ExtraBold.otf">
+            <string>AlegreyaSans-ExtraBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Friends ListVC-->
+        <scene sceneID="dek-vD-e73">
+            <objects>
+                <viewController storyboardIdentifier="FriendsListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0cw-ke-MGK" customClass="FriendsListVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ha8-Ux-q05"/>
+                        <viewControllerLayoutGuide type="bottom" id="rhl-da-r5p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lqu-dz-quJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uik-AS-cXX" userLabel="Top Section">
+                                <rect key="frame" x="-0.5" y="24" width="375" height="103"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYG-zo-mnI" userLabel="Search View">
+                                        <rect key="frame" x="18.5" y="0.0" width="337.5" height="43"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="GeC-pa-DnN">
+                                                <rect key="frame" x="10" y="10" width="21" height="21"/>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w40-Kf-yKt">
+                                                <rect key="frame" x="41" y="8" width="288.5" height="27"/>
+                                                <color key="textColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="w40-Kf-yKt" secondAttribute="trailing" constant="8" id="5sx-57-T7z"/>
+                                            <constraint firstItem="GeC-pa-DnN" firstAttribute="centerY" secondItem="ZYG-zo-mnI" secondAttribute="centerY" constant="-1" id="Dzl-Fx-l6s"/>
+                                            <constraint firstItem="w40-Kf-yKt" firstAttribute="leading" secondItem="GeC-pa-DnN" secondAttribute="trailing" constant="10" id="JjZ-FC-Oom"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GeC-pa-DnN" secondAttribute="bottom" constant="4" id="KFo-hC-bOu"/>
+                                            <constraint firstAttribute="bottom" secondItem="w40-Kf-yKt" secondAttribute="bottom" constant="8" id="MkW-X9-3xM"/>
+                                            <constraint firstItem="GeC-pa-DnN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZYG-zo-mnI" secondAttribute="top" constant="4" id="Pi8-Qb-Pfg"/>
+                                            <constraint firstItem="w40-Kf-yKt" firstAttribute="top" secondItem="ZYG-zo-mnI" secondAttribute="top" constant="8" id="UkP-iT-zPV"/>
+                                            <constraint firstItem="GeC-pa-DnN" firstAttribute="leading" secondItem="ZYG-zo-mnI" secondAttribute="leading" constant="10" id="tLw-Q3-pYH"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSR-xo-VlH" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                        <rect key="frame" x="19" y="55" width="337.5" height="40"/>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="8"/>
+                                        <state key="normal" title="ADD FRIENDS">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="enabledBorderColor">
+                                                <color key="value" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="enabledBackgroundColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ZYG-zo-mnI" firstAttribute="width" secondItem="Uik-AS-cXX" secondAttribute="width" multiplier="0.9" id="3hD-gN-mOd"/>
+                                    <constraint firstItem="aSR-xo-VlH" firstAttribute="centerX" secondItem="ZYG-zo-mnI" secondAttribute="centerX" id="9MW-Tq-JJ2"/>
+                                    <constraint firstAttribute="bottom" secondItem="aSR-xo-VlH" secondAttribute="bottom" constant="8" id="GnH-X9-VdH"/>
+                                    <constraint firstItem="ZYG-zo-mnI" firstAttribute="centerX" secondItem="Uik-AS-cXX" secondAttribute="centerX" id="JMQ-HB-Ys6"/>
+                                    <constraint firstItem="aSR-xo-VlH" firstAttribute="width" secondItem="ZYG-zo-mnI" secondAttribute="width" id="KHX-wv-AVz"/>
+                                    <constraint firstItem="aSR-xo-VlH" firstAttribute="top" secondItem="ZYG-zo-mnI" secondAttribute="bottom" constant="12" id="lsH-vZ-IL8"/>
+                                    <constraint firstItem="ZYG-zo-mnI" firstAttribute="top" secondItem="Uik-AS-cXX" secondAttribute="top" id="oVY-MT-JMV"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IvQ-TR-T7n">
+                                <rect key="frame" x="-0.5" y="127" width="375" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uik-AS-cXX" firstAttribute="top" secondItem="ha8-Ux-q05" secondAttribute="bottom" constant="4" id="ONE-WZ-ydE"/>
+                            <constraint firstItem="IvQ-TR-T7n" firstAttribute="width" secondItem="lqu-dz-quJ" secondAttribute="width" id="UYD-jM-7gN"/>
+                            <constraint firstItem="IvQ-TR-T7n" firstAttribute="top" secondItem="Uik-AS-cXX" secondAttribute="bottom" id="UaA-WX-rLq"/>
+                            <constraint firstItem="Uik-AS-cXX" firstAttribute="width" secondItem="lqu-dz-quJ" secondAttribute="width" id="Zju-EB-NC7"/>
+                            <constraint firstItem="rhl-da-r5p" firstAttribute="top" secondItem="IvQ-TR-T7n" secondAttribute="bottom" id="fYt-cQ-ReU"/>
+                            <constraint firstItem="Uik-AS-cXX" firstAttribute="centerX" secondItem="lqu-dz-quJ" secondAttribute="centerX" id="n19-tC-BIA"/>
+                            <constraint firstItem="IvQ-TR-T7n" firstAttribute="centerX" secondItem="lqu-dz-quJ" secondAttribute="centerX" id="pUf-rZ-8vq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addFriendsButton" destination="aSR-xo-VlH" id="tFv-6z-2xd"/>
+                        <outlet property="searchTextField" destination="w40-Kf-yKt" id="G4v-8B-hQb"/>
+                        <outlet property="tableView" destination="IvQ-TR-T7n" id="bSR-1V-CTW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GIW-PN-fdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Search" width="21" height="21"/>
+    </resources>
+</document>

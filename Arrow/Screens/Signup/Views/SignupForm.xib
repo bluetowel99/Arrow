@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-ExtraBold.otf">
+            <string>AlegreyaSans-ExtraBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController automaticallyAdjustsScrollViewInsets="NO" id="Giv-gc-HJU" customClass="SignupFormVC" customModule="Arrow" customModuleProvider="target">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="bnQ-2B-jGx"/>
+                <viewControllerLayoutGuide type="bottom" id="dyv-i1-khM"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="xbq-6z-R0w">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fp-Rd-IFh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="592"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOv-B7-fFf" userLabel="Content View">
+                                <rect key="frame" x="20" y="0.0" width="335" height="358.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="l61-6s-Npq">
+                                        <rect key="frame" x="0.0" y="20" width="335" height="100"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYk-lI-5H3" customClass="ARFormTextField" customModule="Arrow" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="161.5" height="100"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="message" value="First name"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvK-DL-dcr" customClass="ARFormTextField" customModule="Arrow" customModuleProvider="target">
+                                                <rect key="frame" x="173.5" y="0.0" width="161.5" height="100"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="message" value="Last name"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="fYk-lI-5H3" firstAttribute="top" secondItem="l61-6s-Npq" secondAttribute="top" id="BAo-PG-xeK"/>
+                                            <constraint firstAttribute="bottom" secondItem="fYk-lI-5H3" secondAttribute="bottom" id="u22-h7-nPz"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NkV-Ze-qc4" customClass="ARFormTextField" customModule="Arrow" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="120" width="335" height="75.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="message" value="What's your email?"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z1R-hv-9Dc" customClass="ARFormTextField" customModule="Arrow" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="195.5" width="335" height="75.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="message" value="What password would you like?"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPN-iS-mHL" customClass="ARFormTextField" customModule="Arrow" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="271" width="335" height="75.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="message" value="Confirm password"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Z1R-hv-9Dc" firstAttribute="centerX" secondItem="zOv-B7-fFf" secondAttribute="centerX" id="ISw-jZ-nPG"/>
+                                    <constraint firstItem="Z1R-hv-9Dc" firstAttribute="width" secondItem="zOv-B7-fFf" secondAttribute="width" id="Jpa-hI-a93"/>
+                                    <constraint firstItem="l61-6s-Npq" firstAttribute="top" secondItem="zOv-B7-fFf" secondAttribute="top" constant="20" id="PJO-45-C6Q"/>
+                                    <constraint firstItem="FPN-iS-mHL" firstAttribute="width" secondItem="zOv-B7-fFf" secondAttribute="width" id="QQr-v2-kr0"/>
+                                    <constraint firstItem="NkV-Ze-qc4" firstAttribute="top" secondItem="l61-6s-Npq" secondAttribute="bottom" id="QoL-Zf-RDs"/>
+                                    <constraint firstItem="FPN-iS-mHL" firstAttribute="top" secondItem="Z1R-hv-9Dc" secondAttribute="bottom" id="QuJ-ZG-Tld"/>
+                                    <constraint firstItem="NkV-Ze-qc4" firstAttribute="centerX" secondItem="zOv-B7-fFf" secondAttribute="centerX" id="V6q-Jq-v6B"/>
+                                    <constraint firstItem="l61-6s-Npq" firstAttribute="width" secondItem="zOv-B7-fFf" secondAttribute="width" id="Y9d-DB-hiH"/>
+                                    <constraint firstItem="l61-6s-Npq" firstAttribute="centerX" secondItem="zOv-B7-fFf" secondAttribute="centerX" id="bsS-0O-lD4"/>
+                                    <constraint firstItem="Z1R-hv-9Dc" firstAttribute="top" secondItem="NkV-Ze-qc4" secondAttribute="bottom" id="d4K-hL-V3p"/>
+                                    <constraint firstAttribute="bottom" secondItem="FPN-iS-mHL" secondAttribute="bottom" constant="12" id="hNU-Hl-uak"/>
+                                    <constraint firstItem="NkV-Ze-qc4" firstAttribute="width" secondItem="zOv-B7-fFf" secondAttribute="width" id="hxq-Sw-x2W"/>
+                                    <constraint firstItem="FPN-iS-mHL" firstAttribute="centerX" secondItem="zOv-B7-fFf" secondAttribute="centerX" id="rZH-iO-G09"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="zOv-B7-fFf" firstAttribute="top" secondItem="6fp-Rd-IFh" secondAttribute="top" id="OvD-9C-0Oo"/>
+                            <constraint firstAttribute="trailing" secondItem="zOv-B7-fFf" secondAttribute="trailing" constant="20" id="doD-SD-n9L"/>
+                            <constraint firstItem="zOv-B7-fFf" firstAttribute="centerX" secondItem="6fp-Rd-IFh" secondAttribute="centerX" id="uwO-5p-ZCz"/>
+                            <constraint firstItem="zOv-B7-fFf" firstAttribute="leading" secondItem="6fp-Rd-IFh" secondAttribute="leading" constant="20" id="vTZ-3X-uI6"/>
+                            <constraint firstAttribute="bottom" secondItem="zOv-B7-fFf" secondAttribute="bottom" id="vwf-fc-Obe"/>
+                            <constraint firstItem="zOv-B7-fFf" firstAttribute="height" secondItem="6fp-Rd-IFh" secondAttribute="height" id="xzR-hT-H9R"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xzR-hT-H9R"/>
+                            </mask>
+                        </variation>
+                    </scrollView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3a-GJ-CT4">
+                        <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                        <color key="backgroundColor" red="0.050980392156862744" green="0.54509803921568623" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="0Tz-9x-0TF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="24"/>
+                        <state key="normal" title="NEXT">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="actionButtonPressed:" destination="Giv-gc-HJU" eventType="touchUpInside" id="EdF-6c-DOg"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="R3a-GJ-CT4" firstAttribute="width" secondItem="xbq-6z-R0w" secondAttribute="width" id="FZP-Nn-ZCv"/>
+                    <constraint firstItem="R3a-GJ-CT4" firstAttribute="top" secondItem="6fp-Rd-IFh" secondAttribute="bottom" id="Xkx-Ja-PJJ"/>
+                    <constraint firstItem="dyv-i1-khM" firstAttribute="top" secondItem="R3a-GJ-CT4" secondAttribute="bottom" id="aWf-ot-Aag"/>
+                    <constraint firstItem="6fp-Rd-IFh" firstAttribute="leading" secondItem="xbq-6z-R0w" secondAttribute="leading" id="bBM-EO-IZ4"/>
+                    <constraint firstItem="R3a-GJ-CT4" firstAttribute="centerX" secondItem="xbq-6z-R0w" secondAttribute="centerX" id="dxS-ff-Dwm"/>
+                    <constraint firstAttribute="trailing" secondItem="6fp-Rd-IFh" secondAttribute="trailing" id="pyk-ka-plO"/>
+                    <constraint firstItem="6fp-Rd-IFh" firstAttribute="top" secondItem="bnQ-2B-jGx" secondAttribute="bottom" id="qH3-hE-7A8"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="actionButton" destination="R3a-GJ-CT4" id="qC2-os-5mc"/>
+                <outlet property="confirmPasswordField" destination="FPN-iS-mHL" id="6YO-MO-Khf"/>
+                <outlet property="emailField" destination="NkV-Ze-qc4" id="f1b-Hq-tQL"/>
+                <outlet property="firstNameField" destination="fYk-lI-5H3" id="TBT-8Z-IVs"/>
+                <outlet property="lastNameField" destination="yvK-DL-dcr" id="Jlg-qs-G5c"/>
+                <outlet property="passwordField" destination="Z1R-hv-9Dc" id="adc-Vi-ZMR"/>
+                <outlet property="scrollView" destination="6fp-Rd-IFh" id="dZt-m4-rYo"/>
+            </connections>
+        </viewController>
+    </objects>
+</document>

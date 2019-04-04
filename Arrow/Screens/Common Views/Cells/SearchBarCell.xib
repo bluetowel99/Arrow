@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-Bold.otf">
+            <string>AlegreyaSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchBarCell" rowHeight="78" id="Q0O-yk-3IY" customClass="SearchBarCell" customModule="Arrow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q0O-yk-3IY" id="8bM-N8-CUf">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgr-bK-vVA" userLabel="Search View">
+                        <rect key="frame" x="12" y="12" width="351" height="39.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="6PM-sX-qfE">
+                                <rect key="frame" x="10" y="10" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="1o5-fk-JZ1"/>
+                                    <constraint firstAttribute="width" secondItem="6PM-sX-qfE" secondAttribute="height" multiplier="1:1" id="uEG-i0-caj"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="axv-vO-52d">
+                                <rect key="frame" x="41" y="6" width="302" height="27.5"/>
+                                <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6PM-sX-qfE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cgr-bK-vVA" secondAttribute="top" id="7DW-ZB-Dmu"/>
+                            <constraint firstItem="axv-vO-52d" firstAttribute="top" secondItem="cgr-bK-vVA" secondAttribute="top" constant="6" id="A8U-JS-FLs"/>
+                            <constraint firstItem="axv-vO-52d" firstAttribute="leading" secondItem="6PM-sX-qfE" secondAttribute="trailing" constant="10" id="Anb-WB-xeu"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6PM-sX-qfE" secondAttribute="bottom" id="Pmr-Hd-IWH"/>
+                            <constraint firstAttribute="trailing" secondItem="axv-vO-52d" secondAttribute="trailing" constant="8" id="eYf-vZ-Z9V"/>
+                            <constraint firstItem="6PM-sX-qfE" firstAttribute="leading" secondItem="cgr-bK-vVA" secondAttribute="leading" constant="10" id="rD3-DC-EdH"/>
+                            <constraint firstItem="6PM-sX-qfE" firstAttribute="centerY" secondItem="axv-vO-52d" secondAttribute="centerY" id="sz4-4C-mtR"/>
+                            <constraint firstAttribute="bottom" secondItem="axv-vO-52d" secondAttribute="bottom" constant="6" id="zJY-88-Dej"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cgr-bK-vVA" secondAttribute="trailing" constant="12" id="IFi-0H-5H0"/>
+                    <constraint firstItem="cgr-bK-vVA" firstAttribute="top" secondItem="8bM-N8-CUf" secondAttribute="top" constant="12" id="KeS-Rz-0Ez"/>
+                    <constraint firstItem="cgr-bK-vVA" firstAttribute="leading" secondItem="8bM-N8-CUf" secondAttribute="leading" constant="12" id="Wfd-Lj-0KI"/>
+                    <constraint firstAttribute="bottom" secondItem="cgr-bK-vVA" secondAttribute="bottom" constant="12" id="wsA-U3-jjl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="6PM-sX-qfE" id="huM-uf-w1n"/>
+                <outlet property="textField" destination="axv-vO-52d" id="BaN-Xl-vGQ"/>
+            </connections>
+            <point key="canvasLocation" x="-40.5" y="-252"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Search" width="21" height="21"/>
+    </resources>
+</document>

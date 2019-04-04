@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-Bold.otf">
+            <string>AlegreyaSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommentSectionHeader" customModule="Arrow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O29-U5-l0l" userLabel="Search View">
+                    <rect key="frame" x="5" y="25" width="365" height="43"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ps-F5-8nE">
+                            <rect key="frame" x="330" y="9" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="W2l-A6-E3W"/>
+                                <constraint firstAttribute="height" constant="25" id="kTI-LU-4ab"/>
+                            </constraints>
+                            <state key="normal" image="fill182"/>
+                            <connections>
+                                <action selector="sendActionButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Zc1-X5-fz9"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WRP-5L-vLp" customClass="GrowingTextView" customModule="GrowingTextView">
+                            <rect key="frame" x="10" y="0.0" width="310" height="43"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="kMr-NM-7Lv"/>
+                            </constraints>
+                            <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                            <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="22"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="minHeight">
+                                    <real key="value" value="40"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxHeight">
+                                    <real key="value" value="80"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="What's happening here..."/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                    <integer key="value" value="500"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="BYw-sH-rLT"/>
+                        <constraint firstItem="0Ps-F5-8nE" firstAttribute="leading" secondItem="WRP-5L-vLp" secondAttribute="trailing" constant="10" id="MZC-7O-EZe"/>
+                        <constraint firstItem="WRP-5L-vLp" firstAttribute="centerY" secondItem="O29-U5-l0l" secondAttribute="centerY" id="X64-7C-Iso"/>
+                        <constraint firstAttribute="trailing" secondItem="0Ps-F5-8nE" secondAttribute="trailing" constant="10" id="bcc-mj-d1O"/>
+                        <constraint firstItem="WRP-5L-vLp" firstAttribute="leading" secondItem="O29-U5-l0l" secondAttribute="leading" constant="10" id="lqM-Sh-2Mf"/>
+                        <constraint firstItem="0Ps-F5-8nE" firstAttribute="centerY" secondItem="O29-U5-l0l" secondAttribute="centerY" id="peV-aa-ch9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="363-gc-Zxs">
+                    <rect key="frame" x="10" y="78" width="67" height="22"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQ1-MU-yBq">
+                            <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                            <state key="normal" image="galleryIcon"/>
+                            <connections>
+                                <action selector="galleryActionButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="suM-1T-HcE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Th-Xp-n09">
+                            <rect key="frame" x="42" y="0.0" width="25" height="22"/>
+                            <state key="normal" image="cameraIcon"/>
+                            <connections>
+                                <action selector="photoTakeActionButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="pfn-jH-n3m"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="363-gc-Zxs" firstAttribute="top" secondItem="O29-U5-l0l" secondAttribute="bottom" constant="10" id="0U8-Dl-8Jf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="O29-U5-l0l" secondAttribute="trailing" constant="5" id="W0f-IJ-hUb"/>
+                <constraint firstItem="O29-U5-l0l" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="Z95-zh-RUu"/>
+                <constraint firstItem="O29-U5-l0l" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="kM4-4a-DA3"/>
+                <constraint firstItem="363-gc-Zxs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="tVo-i6-uSM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="commentTextView" destination="WRP-5L-vLp" id="NGm-c1-dZg"/>
+                <outlet property="commentViewHeight" destination="BYw-sH-rLT" id="IP4-Nx-mkc"/>
+                <outlet property="galleryActionButton" destination="jQ1-MU-yBq" id="ZiK-eY-iNA"/>
+                <outlet property="photoTakeActionButton" destination="7Th-Xp-n09" id="oCf-Eb-j8G"/>
+                <outlet property="sendActionButton" destination="0Ps-F5-8nE" id="Yaf-xg-kQp"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cameraIcon" width="25" height="22"/>
+        <image name="fill182" width="25" height="25"/>
+        <image name="galleryIcon" width="22" height="22"/>
+    </resources>
+</document>

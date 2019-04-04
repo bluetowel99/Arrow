@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-Bold.otf">
+            <string>AlegreyaSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="MessagesAudioPreviewView" customModule="Arrow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="484" height="43"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QvY-O1-fhi">
+                    <rect key="frame" x="0.0" y="0.0" width="278" height="43"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audioBackground" translatesAutoresizingMaskIntoConstraints="NO" id="xzU-aQ-3QL">
+                            <rect key="frame" x="0.0" y="0.0" width="278" height="43"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkH-ud-XGT">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="WDB-GP-VOj"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="3"/>
+                            <state key="normal" image="playIcon"/>
+                            <connections>
+                                <action selector="playAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ks6-MH-fRU"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="wave" translatesAutoresizingMaskIntoConstraints="NO" id="OOE-Gy-Rrt">
+                            <rect key="frame" x="44" y="0.0" width="189" height="43"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:04" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNM-j4-cFb">
+                            <rect key="frame" x="238" y="9" width="25" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="BjC-It-SPi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="QkH-ud-XGT" secondAttribute="bottom" id="0ny-Uf-X4l"/>
+                        <constraint firstAttribute="trailing" secondItem="wNM-j4-cFb" secondAttribute="trailing" constant="15" id="2Hi-El-5PR"/>
+                        <constraint firstItem="xzU-aQ-3QL" firstAttribute="top" secondItem="QvY-O1-fhi" secondAttribute="top" id="38S-fx-8He"/>
+                        <constraint firstItem="OOE-Gy-Rrt" firstAttribute="top" secondItem="QvY-O1-fhi" secondAttribute="top" id="4JI-Nc-zBR"/>
+                        <constraint firstItem="xzU-aQ-3QL" firstAttribute="leading" secondItem="QvY-O1-fhi" secondAttribute="leading" id="GN0-OB-omM"/>
+                        <constraint firstItem="QkH-ud-XGT" firstAttribute="leading" secondItem="QvY-O1-fhi" secondAttribute="leading" id="Jso-p5-iOD"/>
+                        <constraint firstItem="wNM-j4-cFb" firstAttribute="centerY" secondItem="QvY-O1-fhi" secondAttribute="centerY" constant="-2" id="Jwn-Ek-RZV"/>
+                        <constraint firstAttribute="bottom" secondItem="OOE-Gy-Rrt" secondAttribute="bottom" id="L55-u0-ZcK"/>
+                        <constraint firstItem="wNM-j4-cFb" firstAttribute="leading" secondItem="OOE-Gy-Rrt" secondAttribute="trailing" constant="5" id="ObD-8p-32X"/>
+                        <constraint firstAttribute="trailing" secondItem="xzU-aQ-3QL" secondAttribute="trailing" id="TbF-Af-yqt"/>
+                        <constraint firstAttribute="width" constant="278" id="b1u-Wv-nh8"/>
+                        <constraint firstAttribute="bottom" secondItem="xzU-aQ-3QL" secondAttribute="bottom" id="fSu-mL-T0k"/>
+                        <constraint firstItem="OOE-Gy-Rrt" firstAttribute="leading" secondItem="QkH-ud-XGT" secondAttribute="trailing" id="l5S-ut-OUs"/>
+                        <constraint firstItem="QkH-ud-XGT" firstAttribute="top" secondItem="QvY-O1-fhi" secondAttribute="top" id="yhQ-MJ-Yyi"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xS-JY-KRB">
+                    <rect key="frame" x="249" y="0.0" width="44" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="a86-Zd-t55"/>
+                    </constraints>
+                    <state key="normal" image="deleteMediaIcon"/>
+                    <connections>
+                        <action selector="deleteAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="CzT-SD-636"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QvY-O1-fhi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BBS-NE-vZn"/>
+                <constraint firstAttribute="bottom" secondItem="QvY-O1-fhi" secondAttribute="bottom" id="KDV-Er-DPn"/>
+                <constraint firstItem="QvY-O1-fhi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ulf-sO-Bw8"/>
+                <constraint firstAttribute="bottom" secondItem="3xS-JY-KRB" secondAttribute="bottom" id="d3t-Ka-6Sr"/>
+                <constraint firstItem="3xS-JY-KRB" firstAttribute="leading" secondItem="QvY-O1-fhi" secondAttribute="trailing" constant="-29" id="wW1-AZ-sBv"/>
+                <constraint firstItem="3xS-JY-KRB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zUv-Rw-aTw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="playButton" destination="QkH-ud-XGT" id="xST-kv-szl"/>
+                <outlet property="timerLabel" destination="wNM-j4-cFb" id="qQs-tT-JH9"/>
+            </connections>
+            <point key="canvasLocation" x="90" y="-301.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="audioBackground" width="288" height="47"/>
+        <image name="deleteMediaIcon" width="17" height="17"/>
+        <image name="playIcon" width="26" height="26"/>
+        <image name="wave" width="207" height="39"/>
+    </resources>
+</document>

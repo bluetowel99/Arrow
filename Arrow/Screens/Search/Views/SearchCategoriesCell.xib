@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCategoriesCell" rowHeight="90" id="yJo-E7-pz7" customClass="SearchCategoriesCell" customModule="Arrow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="607" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yJo-E7-pz7" id="3R4-k5-zPD">
+                <rect key="frame" x="0.0" y="0.0" width="607" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUg-1h-fJJ">
+                        <rect key="frame" x="0.0" y="0.0" width="607" height="89.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="92H-m6-YGW">
+                                <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvN-5C-Imx" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
+                                        <color key="backgroundColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="82" id="LNP-EN-HYs"/>
+                                            <constraint firstAttribute="height" constant="82" id="okP-4I-2pP"/>
+                                        </constraints>
+                                        <state key="normal" title="Title">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="92H-m6-YGW" secondAttribute="trailing" id="EPD-NB-DhY"/>
+                            <constraint firstAttribute="bottom" secondItem="92H-m6-YGW" secondAttribute="bottom" id="HWK-G9-SU9"/>
+                            <constraint firstItem="92H-m6-YGW" firstAttribute="leading" secondItem="oUg-1h-fJJ" secondAttribute="leading" id="dnt-EB-kw4"/>
+                            <constraint firstItem="92H-m6-YGW" firstAttribute="top" secondItem="oUg-1h-fJJ" secondAttribute="top" id="oZl-Il-Gkw"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oUg-1h-fJJ" firstAttribute="height" secondItem="3R4-k5-zPD" secondAttribute="height" id="DrD-T9-dah"/>
+                    <constraint firstItem="oUg-1h-fJJ" firstAttribute="centerY" secondItem="3R4-k5-zPD" secondAttribute="centerY" id="f6h-3z-ehH"/>
+                    <constraint firstItem="oUg-1h-fJJ" firstAttribute="centerX" secondItem="3R4-k5-zPD" secondAttribute="centerX" id="hTc-TU-hi5"/>
+                    <constraint firstItem="oUg-1h-fJJ" firstAttribute="width" secondItem="3R4-k5-zPD" secondAttribute="width" id="o5R-xb-KKi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="listStackView" destination="92H-m6-YGW" id="l13-ma-Hly"/>
+                <outlet property="scrollView" destination="oUg-1h-fJJ" id="RSb-01-cBs"/>
+                <outlet property="scrollViewHeightConstraint" destination="DrD-T9-dah" id="frw-t1-X24"/>
+            </connections>
+            <point key="canvasLocation" x="90.5" y="190"/>
+        </tableViewCell>
+    </objects>
+</document>

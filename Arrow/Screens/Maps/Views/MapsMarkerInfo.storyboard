@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-Regular.otf">
+            <string>AlegreyaSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Maps Marker InfoVC-->
+        <scene sceneID="GsW-yq-aWT">
+            <objects>
+                <viewController storyboardIdentifier="MapsMarkerInfoVC" id="uBY-TR-UJC" customClass="MapsMarkerInfoVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uhw-07-nf4"/>
+                        <viewControllerLayoutGuide type="bottom" id="rfI-mJ-HIK"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="RSz-xA-hfs">
+                        <rect key="frame" x="0.0" y="0.0" width="230" height="178"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I37-uy-9uM">
+                                <rect key="frame" x="0.0" y="36" width="230" height="142"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="MapsMarkerInfoTop" translatesAutoresizingMaskIntoConstraints="NO" id="TN9-XC-cF3">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="102"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="102" id="76a-pj-ity"/>
+                                            <constraint firstAttribute="width" constant="230" id="tr1-2q-YCc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o8L-9s-HtI">
+                                        <rect key="frame" x="0.0" y="102" width="230" height="30"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="MapsMarkerInfoBottom" translatesAutoresizingMaskIntoConstraints="NO" id="64D-99-d5p">
+                                                <rect key="frame" x="0.0" y="0.0" width="230" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="XVG-Ar-VkH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="abw-O0-5hE">
+                                                <rect key="frame" x="10" y="2" width="210" height="27"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNH-Ft-AHb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="56" height="27"/>
+                                                        <fontDescription key="fontDescription" name="AlegreyaSans-Regular" family="Alegreya Sans" pointSize="14"/>
+                                                        <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Chat" image="MapsMarkerInfoMessage">
+                                                            <color key="titleColor" red="0.57254901960000004" green="0.58039215690000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="chat:" destination="uBY-TR-UJC" eventType="touchUpInside" id="hP5-sh-6PD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="MapsMarkerInfoVerticalDivider" translatesAutoresizingMaskIntoConstraints="NO" id="ZBb-Oh-UJM">
+                                                        <rect key="frame" x="61" y="0.0" width="2" height="27"/>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4WZ-Ia-AP3">
+                                                        <rect key="frame" x="68" y="0.0" width="66" height="27"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" placeholderIntrinsicWidth="23" placeholderIntrinsicHeight="12" translatesAutoresizingMaskIntoConstraints="NO" id="dar-Au-0KT" customClass="BatteryIndicator" customModule="Arrow" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="7.5" width="23" height="12"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="percentage">
+                                                                        <integer key="value" value="100"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpo-8S-thC">
+                                                                <rect key="frame" x="23" y="5.5" width="43" height="16.5"/>
+                                                                <fontDescription key="fontDescription" name="AlegreyaSans-Regular" family="Alegreya Sans" pointSize="14"/>
+                                                                <color key="textColor" red="0.57254901960000004" green="0.58039215690000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="MapsMarkerInfoVerticalDivider" translatesAutoresizingMaskIntoConstraints="NO" id="zjo-LP-WRa">
+                                                        <rect key="frame" x="139" y="0.0" width="2.5" height="27"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5m ago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKr-vZ-lsR">
+                                                        <rect key="frame" x="146.5" y="0.0" width="63.5" height="27"/>
+                                                        <fontDescription key="fontDescription" name="AlegreyaSans-Regular" family="Alegreya Sans" pointSize="14"/>
+                                                        <color key="textColor" red="0.57254901960000004" green="0.58039215690000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="3y9-So-5gL"/>
+                                            <constraint firstAttribute="trailing" secondItem="abw-O0-5hE" secondAttribute="trailing" constant="10" id="Lee-NA-nEy"/>
+                                            <constraint firstItem="abw-O0-5hE" firstAttribute="leading" secondItem="o8L-9s-HtI" secondAttribute="leading" constant="10" id="OTh-JP-7vh"/>
+                                            <constraint firstItem="64D-99-d5p" firstAttribute="leading" secondItem="o8L-9s-HtI" secondAttribute="leading" id="XdK-1b-egm"/>
+                                            <constraint firstItem="64D-99-d5p" firstAttribute="top" secondItem="o8L-9s-HtI" secondAttribute="top" id="aN7-jb-K0k"/>
+                                            <constraint firstAttribute="bottom" secondItem="64D-99-d5p" secondAttribute="bottom" id="eRR-rk-K4a"/>
+                                            <constraint firstAttribute="trailing" secondItem="64D-99-d5p" secondAttribute="trailing" id="fXQ-de-SNa"/>
+                                            <constraint firstItem="abw-O0-5hE" firstAttribute="centerY" secondItem="o8L-9s-HtI" secondAttribute="centerY" id="mco-FI-1BY"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="MapsMarkerInfoCallout" translatesAutoresizingMaskIntoConstraints="NO" id="zbz-qh-ENC">
+                                        <rect key="frame" x="103.5" y="132" width="23" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="Pgl-cj-46q"/>
+                                            <constraint firstAttribute="width" constant="23" id="uOO-IB-Ty5"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="o8L-9s-HtI" secondAttribute="trailing" id="Pjb-QK-mw5"/>
+                                    <constraint firstAttribute="height" constant="142" id="gNg-OF-agI"/>
+                                    <constraint firstItem="o8L-9s-HtI" firstAttribute="leading" secondItem="I37-uy-9uM" secondAttribute="leading" id="xxI-no-ljA"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AaE-fr-oVT">
+                                <rect key="frame" x="8" y="0.0" width="214" height="132"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATl-4i-XiR">
+                                        <rect key="frame" x="74" y="0.0" width="66" height="66"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pqi-qQ-TGk">
+                                                <rect key="frame" x="4" y="3" width="59" height="59"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Pqi-qQ-TGk" secondAttribute="bottom" constant="4" id="Ayp-x5-aX2"/>
+                                            <constraint firstAttribute="width" constant="66" id="E29-Ia-bEL"/>
+                                            <constraint firstAttribute="height" constant="66" id="Zut-bt-laW"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pqi-qQ-TGk" secondAttribute="trailing" constant="3" id="jMx-WF-9EF"/>
+                                            <constraint firstItem="Pqi-qQ-TGk" firstAttribute="top" secondItem="ATl-4i-XiR" secondAttribute="top" constant="3" id="s99-b4-KCI"/>
+                                            <constraint firstItem="Pqi-qQ-TGk" firstAttribute="leading" secondItem="ATl-4i-XiR" secondAttribute="leading" constant="4" id="tTg-rm-jRZ"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVJ-ks-ecO">
+                                        <rect key="frame" x="0.0" y="66" width="214" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="ACT-4U-uGS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="7mf-VB-Kkl">
+                                        <rect key="frame" x="33" y="90" width="148" height="42"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="MapsMarkerInfoLocation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdg-Cx-MNi">
+                                                <rect key="frame" x="0.0" y="0.0" width="10" height="42"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="644 Entertainment Way" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOw-S0-Tdc">
+                                                <rect key="frame" x="14" y="0.0" width="134" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gz-Sc-bNV">
+                                        <rect key="frame" x="49" y="132" width="116" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="EDIT YOUR PROFILE">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="viewProfile:" destination="uBY-TR-UJC" eventType="touchUpInside" id="Mrn-3v-zNZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="1IM-n3-kXb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="178" id="6tB-NQ-w0m"/>
+                            <constraint firstItem="I37-uy-9uM" firstAttribute="leading" secondItem="RSz-xA-hfs" secondAttribute="leading" id="EBn-75-Obv"/>
+                            <constraint firstAttribute="bottom" secondItem="I37-uy-9uM" secondAttribute="bottom" id="Eow-sj-Hx3"/>
+                            <constraint firstAttribute="trailing" secondItem="AaE-fr-oVT" secondAttribute="trailing" constant="8" id="Hk3-9T-IpD"/>
+                            <constraint firstAttribute="trailing" secondItem="I37-uy-9uM" secondAttribute="trailing" id="Qac-8t-w1H"/>
+                            <constraint firstItem="AaE-fr-oVT" firstAttribute="leading" secondItem="RSz-xA-hfs" secondAttribute="leading" constant="8" id="Uxv-Tj-RCn"/>
+                            <constraint firstItem="AaE-fr-oVT" firstAttribute="top" secondItem="RSz-xA-hfs" secondAttribute="top" id="r8b-qg-0oI"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="230" height="178"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="OOw-S0-Tdc" id="5fo-Kg-ZSh"/>
+                        <outlet property="batteryIndicator" destination="dar-Au-0KT" id="XTA-uR-6xw"/>
+                        <outlet property="batteryIndicatorStackView" destination="4WZ-Ia-AP3" id="0Lw-lF-Zld"/>
+                        <outlet property="batteryPercentageLabel" destination="Lpo-8S-thC" id="RGa-Xg-ExJ"/>
+                        <outlet property="chatButton" destination="VNH-Ft-AHb" id="Gjg-Hu-DdJ"/>
+                        <outlet property="controlsStackView" destination="abw-O0-5hE" id="A8N-rD-9U2"/>
+                        <outlet property="imageBackingView" destination="ATl-4i-XiR" id="R0Q-Dq-ljh"/>
+                        <outlet property="imageView" destination="Pqi-qQ-TGk" id="goe-Su-rcH"/>
+                        <outlet property="lastActiveLabel" destination="pKr-vZ-lsR" id="DHK-Kc-oLs"/>
+                        <outlet property="leftDivider" destination="ZBb-Oh-UJM" id="n8Y-Or-dYV"/>
+                        <outlet property="locationSharingButton" destination="8r5-Db-NAb" id="l8I-7N-2sO"/>
+                        <outlet property="nameLabel" destination="KVJ-ks-ecO" id="r90-mL-XBL"/>
+                        <outlet property="profileButton" destination="4Gz-Sc-bNV" id="nt7-3Q-7HE"/>
+                        <outlet property="rightDivider" destination="zjo-LP-WRa" id="jiE-P9-jCp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Djn-Ot-eyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8r5-Db-NAb">
+                    <rect key="frame" x="0.0" y="0.0" width="181" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="AlegreyaSans-Regular" family="Alegreya Sans" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Turn Off Location Sharing" image="MapPopupLocationIndicator">
+                        <color key="titleColor" red="0.57254901960000004" green="0.58039215690000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="toggleLocationSharing:" destination="uBY-TR-UJC" eventType="touchUpInside" id="riq-yq-7x0"/>
+                    </connections>
+                </button>
+            </objects>
+            <point key="canvasLocation" x="-494.39999999999998" y="-29.685157421289357"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MapPopupLocationIndicator" width="15" height="15"/>
+        <image name="MapsMarkerInfoBottom" width="21" height="30"/>
+        <image name="MapsMarkerInfoCallout" width="23" height="10"/>
+        <image name="MapsMarkerInfoLocation" width="10" height="13"/>
+        <image name="MapsMarkerInfoMessage" width="15" height="15"/>
+        <image name="MapsMarkerInfoTop" width="21" height="102"/>
+        <image name="MapsMarkerInfoVerticalDivider" width="2" height="27"/>
+    </resources>
+</document>

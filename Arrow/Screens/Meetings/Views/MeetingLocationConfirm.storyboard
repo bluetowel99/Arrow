@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-Bold.otf">
+            <string>AlegreyaSans-Bold</string>
+        </array>
+        <array key="AlegreyaSans-ExtraBold.otf">
+            <string>AlegreyaSans-ExtraBold</string>
+        </array>
+        <array key="AlegreyaSans-Medium.otf">
+            <string>AlegreyaSans-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Meeting Location ConfirmVC-->
+        <scene sceneID="fga-PI-X16">
+            <objects>
+                <viewController storyboardIdentifier="MeetingLocationConfirmVC" id="RGl-MX-0f5" customClass="MeetingLocationConfirmVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ulZ-wE-HQO"/>
+                        <viewControllerLayoutGuide type="bottom" id="qsj-rL-2H0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YBL-dq-4fE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c13-Fo-MIZ">
+                                <rect key="frame" x="16" y="20" width="343" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LocationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="hE8-uX-8pF">
+                                        <rect key="frame" x="0.0" y="21" width="21" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="21" id="g1c-a5-JW3"/>
+                                            <constraint firstAttribute="height" constant="21" id="loR-QU-5td"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basement Tavern" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLI-g6-SA6">
+                                        <rect key="frame" x="36" y="18" width="263" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="2GJ-Ug-tm9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2640 Main St., Santa Monica, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="kpe-og-yDg">
+                                        <rect key="frame" x="36" y="39" width="263" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Yi6-HP-dIj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-Medium" family="Alegreya Sans" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQ2-8k-HE2">
+                                        <rect key="frame" x="299" y="18" width="44" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="p15-db-UZo"/>
+                                        </constraints>
+                                        <state key="normal" image="CloseIcon"/>
+                                        <connections>
+                                            <action selector="removePlaceButtonPressed:" destination="RGl-MX-0f5" eventType="touchUpInside" id="gsx-3R-BZm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4ce-JE-D2G"/>
+                                    <constraint firstAttribute="bottom" secondItem="kpe-og-yDg" secondAttribute="bottom" id="A8L-aK-vPb"/>
+                                    <constraint firstItem="kpe-og-yDg" firstAttribute="top" secondItem="BLI-g6-SA6" secondAttribute="bottom" id="BuZ-To-ybV"/>
+                                    <constraint firstItem="BLI-g6-SA6" firstAttribute="leading" secondItem="kpe-og-yDg" secondAttribute="leading" id="DwR-6r-q9G"/>
+                                    <constraint firstItem="hE8-uX-8pF" firstAttribute="top" secondItem="BLI-g6-SA6" secondAttribute="top" constant="3" id="EXM-3A-mYn"/>
+                                    <constraint firstItem="kpe-og-yDg" firstAttribute="leading" secondItem="hE8-uX-8pF" secondAttribute="trailing" constant="15" id="Mbj-gB-OMI"/>
+                                    <constraint firstAttribute="bottom" secondItem="qQ2-8k-HE2" secondAttribute="bottom" id="SHn-yw-KNm"/>
+                                    <constraint firstItem="qQ2-8k-HE2" firstAttribute="leading" secondItem="BLI-g6-SA6" secondAttribute="trailing" id="Y9v-Uj-S4i"/>
+                                    <constraint firstItem="qQ2-8k-HE2" firstAttribute="leading" secondItem="kpe-og-yDg" secondAttribute="trailing" id="i9K-zg-WsB"/>
+                                    <constraint firstItem="hE8-uX-8pF" firstAttribute="leading" secondItem="c13-Fo-MIZ" secondAttribute="leading" id="iEu-MQ-nhB"/>
+                                    <constraint firstAttribute="trailing" secondItem="qQ2-8k-HE2" secondAttribute="trailing" id="j99-gC-quW"/>
+                                    <constraint firstItem="qQ2-8k-HE2" firstAttribute="top" secondItem="BLI-g6-SA6" secondAttribute="top" id="sBu-BY-dDN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgR-N9-Rqh" customClass="GMSMapView">
+                                <rect key="frame" x="16" y="100" width="343" height="216"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="XgN-wn-g7S"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4x-P8-LqR" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="Ttt-bk-OtR"/>
+                                    <constraint firstAttribute="height" constant="55" id="pTq-Xb-PYU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="22"/>
+                                <state key="normal" title="SET DATE AND TIME">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonPressed:" destination="RGl-MX-0f5" eventType="touchUpInside" id="t0U-cn-aAc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jgR-N9-Rqh" firstAttribute="top" secondItem="c13-Fo-MIZ" secondAttribute="bottom" constant="20" id="0R0-HL-2dO"/>
+                            <constraint firstItem="c13-Fo-MIZ" firstAttribute="top" secondItem="ulZ-wE-HQO" secondAttribute="bottom" id="55U-fa-8P4"/>
+                            <constraint firstAttribute="trailing" secondItem="c13-Fo-MIZ" secondAttribute="trailing" constant="16" id="GR3-bw-QAY"/>
+                            <constraint firstItem="c13-Fo-MIZ" firstAttribute="leading" secondItem="YBL-dq-4fE" secondAttribute="leading" constant="16" id="H0X-WX-jwI"/>
+                            <constraint firstItem="c4x-P8-LqR" firstAttribute="leading" secondItem="YBL-dq-4fE" secondAttribute="leading" id="MC2-cx-yll"/>
+                            <constraint firstItem="jgR-N9-Rqh" firstAttribute="leading" secondItem="YBL-dq-4fE" secondAttribute="leading" constant="16" id="izf-Jc-Eop"/>
+                            <constraint firstItem="qsj-rL-2H0" firstAttribute="top" secondItem="c4x-P8-LqR" secondAttribute="bottom" id="n64-t3-LqK"/>
+                            <constraint firstAttribute="trailing" secondItem="jgR-N9-Rqh" secondAttribute="trailing" constant="16" id="tlb-7B-xMv"/>
+                            <constraint firstAttribute="trailing" secondItem="c4x-P8-LqR" secondAttribute="trailing" id="w74-Gt-35f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="jgR-N9-Rqh" id="Wo5-eJ-tf1"/>
+                        <outlet property="placeAddressLabel" destination="kpe-og-yDg" id="E8H-zX-dRB"/>
+                        <outlet property="placeNameLabel" destination="BLI-g6-SA6" id="Zlz-Dq-FaL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qfb-es-lSQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-209" y="143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CloseIcon" width="19" height="19"/>
+        <image name="LocationIcon" width="17" height="21"/>
+    </resources>
+</document>

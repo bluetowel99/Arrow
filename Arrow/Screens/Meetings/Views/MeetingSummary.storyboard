@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-Bold.otf">
+            <string>AlegreyaSans-Bold</string>
+        </array>
+        <array key="AlegreyaSans-ExtraBold.otf">
+            <string>AlegreyaSans-ExtraBold</string>
+        </array>
+        <array key="AlegreyaSans-Medium.otf">
+            <string>AlegreyaSans-Medium</string>
+        </array>
+        <array key="WorkSans-ExtraBold.otf">
+            <string>WorkSans-ExtraBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Meeting SummaryVC-->
+        <scene sceneID="Izf-zQ-a8n">
+            <objects>
+                <viewController storyboardIdentifier="MeetingSummaryVC" id="BIi-22-13T" customClass="MeetingSummaryVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e1H-mh-05M"/>
+                        <viewControllerLayoutGuide type="bottom" id="qYE-Aa-2u1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tOl-eG-FOH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brian Becomes an Adult" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjF-4P-ey3">
+                                <rect key="frame" x="16" y="25" width="343" height="29.5"/>
+                                <fontDescription key="fontDescription" name="WorkSans-ExtraBold" family="Work Sans" pointSize="25"/>
+                                <color key="textColor" red="0.019607843137254902" green="0.2196078431372549" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxv-mu-kpN">
+                                <rect key="frame" x="16" y="62.5" width="343" height="43.5"/>
+                                <string key="text">Wednesday September 9, 2016
+at 7:00PM</string>
+                                <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="18"/>
+                                <color key="textColor" red="0.050980392156862744" green="0.54509803921568623" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mid-week drinks to catch up before the 3-day weekend." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njh-Cu-bJ8">
+                                <rect key="frame" x="16" y="124" width="343" height="43.5"/>
+                                <fontDescription key="fontDescription" name="AlegreyaSans-Medium" family="Alegreya Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKo-8Q-ivS">
+                                <rect key="frame" x="16" y="177" width="343" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LocationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="wal-fJ-BnT">
+                                        <rect key="frame" x="0.0" y="21" width="21" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="77Y-C6-pSO"/>
+                                            <constraint firstAttribute="width" constant="21" id="ZDq-Y0-cV5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basement Tavern" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oan-6y-IJ8">
+                                        <rect key="frame" x="36" y="18" width="307" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="rkN-cL-idi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2640 Main St., Santa Monica, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="xc4-jd-LPb">
+                                        <rect key="frame" x="36" y="39" width="307" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Q7t-7g-bpX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-Medium" family="Alegreya Sans" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oan-6y-IJ8" secondAttribute="trailing" id="1Wo-8y-yVs"/>
+                                    <constraint firstItem="xc4-jd-LPb" firstAttribute="leading" secondItem="wal-fJ-BnT" secondAttribute="trailing" constant="15" id="Ab5-9n-IFe"/>
+                                    <constraint firstItem="xc4-jd-LPb" firstAttribute="top" secondItem="oan-6y-IJ8" secondAttribute="bottom" id="JUz-Sg-Kqb"/>
+                                    <constraint firstAttribute="bottom" secondItem="xc4-jd-LPb" secondAttribute="bottom" id="PuE-V3-5fh"/>
+                                    <constraint firstAttribute="height" constant="60" id="T1C-rO-g4v"/>
+                                    <constraint firstItem="wal-fJ-BnT" firstAttribute="leading" secondItem="OKo-8Q-ivS" secondAttribute="leading" id="UHS-rP-gt5"/>
+                                    <constraint firstAttribute="trailing" secondItem="xc4-jd-LPb" secondAttribute="trailing" id="bYJ-T4-GjW"/>
+                                    <constraint firstItem="wal-fJ-BnT" firstAttribute="top" secondItem="oan-6y-IJ8" secondAttribute="top" constant="3" id="cBV-h4-rnM"/>
+                                    <constraint firstItem="oan-6y-IJ8" firstAttribute="leading" secondItem="xc4-jd-LPb" secondAttribute="leading" id="qH0-NJ-uDy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPy-Ig-RoS" customClass="GMSMapView">
+                                <rect key="frame" x="16" y="260.5" width="343" height="216"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="216" id="4ps-cd-wmW"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c28-4h-hEs" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="ALq-bj-UmA"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="kSK-oO-1sc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="22"/>
+                                <state key="normal" title="CREATE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonPressed:" destination="BIi-22-13T" eventType="touchUpInside" id="y5Q-u4-3MJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c28-4h-hEs" firstAttribute="leading" secondItem="tOl-eG-FOH" secondAttribute="leading" id="2n9-mv-dWm"/>
+                            <constraint firstAttribute="trailing" secondItem="uPy-Ig-RoS" secondAttribute="trailing" constant="16" id="3d6-9e-ti0"/>
+                            <constraint firstItem="njh-Cu-bJ8" firstAttribute="top" secondItem="kxv-mu-kpN" secondAttribute="bottom" constant="18" id="4og-EZ-lNy"/>
+                            <constraint firstAttribute="trailing" secondItem="c28-4h-hEs" secondAttribute="trailing" id="6ig-vb-fqC"/>
+                            <constraint firstItem="uPy-Ig-RoS" firstAttribute="top" secondItem="OKo-8Q-ivS" secondAttribute="bottom" priority="750" constant="23" id="A20-ZQ-MeQ"/>
+                            <constraint firstAttribute="trailing" secondItem="kxv-mu-kpN" secondAttribute="trailing" constant="16" id="CDl-Jb-SLO"/>
+                            <constraint firstAttribute="trailing" secondItem="njh-Cu-bJ8" secondAttribute="trailing" constant="16" id="D1f-hr-Eej"/>
+                            <constraint firstItem="qYE-Aa-2u1" firstAttribute="top" secondItem="c28-4h-hEs" secondAttribute="bottom" id="H47-pE-S5a"/>
+                            <constraint firstAttribute="trailing" secondItem="UjF-4P-ey3" secondAttribute="trailing" constant="16" id="Hk6-AQ-lb8"/>
+                            <constraint firstItem="uPy-Ig-RoS" firstAttribute="leading" secondItem="tOl-eG-FOH" secondAttribute="leading" constant="16" id="Mog-cL-wQz"/>
+                            <constraint firstItem="UjF-4P-ey3" firstAttribute="top" secondItem="e1H-mh-05M" secondAttribute="bottom" constant="5" id="Ntd-Hl-CjA"/>
+                            <constraint firstItem="UjF-4P-ey3" firstAttribute="leading" secondItem="tOl-eG-FOH" secondAttribute="leading" constant="16" id="fTx-2K-HOp"/>
+                            <constraint firstItem="OKo-8Q-ivS" firstAttribute="leading" secondItem="tOl-eG-FOH" secondAttribute="leading" constant="16" id="hge-Mf-nsC"/>
+                            <constraint firstItem="kxv-mu-kpN" firstAttribute="top" secondItem="UjF-4P-ey3" secondAttribute="bottom" constant="8" id="ibL-ZU-VeW"/>
+                            <constraint firstItem="kxv-mu-kpN" firstAttribute="leading" secondItem="tOl-eG-FOH" secondAttribute="leading" constant="16" id="tJR-Pk-qyy"/>
+                            <constraint firstAttribute="trailing" secondItem="OKo-8Q-ivS" secondAttribute="trailing" constant="16" id="wab-ur-7o5"/>
+                            <constraint firstItem="OKo-8Q-ivS" firstAttribute="top" secondItem="njh-Cu-bJ8" secondAttribute="bottom" constant="10" id="x8y-EB-1xC"/>
+                            <constraint firstItem="c28-4h-hEs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="uPy-Ig-RoS" secondAttribute="bottom" constant="20" id="z97-oP-iFP"/>
+                            <constraint firstItem="njh-Cu-bJ8" firstAttribute="leading" secondItem="tOl-eG-FOH" secondAttribute="leading" constant="16" id="zqe-Iz-Opd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bubbleNameLabel" destination="UjF-4P-ey3" id="Bhb-XX-YHq"/>
+                        <outlet property="mapView" destination="uPy-Ig-RoS" id="HK6-3R-QdN"/>
+                        <outlet property="meetingAddressLabel" destination="xc4-jd-LPb" id="Jiv-xk-Xuf"/>
+                        <outlet property="meetingDateLabel" destination="kxv-mu-kpN" id="9zf-NS-f38"/>
+                        <outlet property="meetingDescriptionLabel" destination="njh-Cu-bJ8" id="w7V-Pc-hsV"/>
+                        <outlet property="meetingPlaceName" destination="oan-6y-IJ8" id="dX9-3I-61c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYI-OH-uv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-110" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LocationIcon" width="17" height="21"/>
+    </resources>
+</document>

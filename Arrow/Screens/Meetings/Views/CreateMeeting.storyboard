@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-ExtraBold.otf">
+            <string>AlegreyaSans-ExtraBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Create MeetingVC-->
+        <scene sceneID="Xd4-4p-YLg">
+            <objects>
+                <viewController storyboardIdentifier="CreateMeetingVC" id="dRD-yu-RNj" customClass="CreateMeetingVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G1v-9U-acz"/>
+                        <viewControllerLayoutGuide type="bottom" id="TVu-AS-XFA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="89c-t3-dUV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FgN-R4-AzZ" customClass="ARFormTextField" customModule="Arrow" customModuleProvider="target">
+                                <rect key="frame" x="20" y="60" width="335" height="75.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fq1-PQ-dex" customClass="ARFormTextField" customModule="Arrow" customModuleProvider="target">
+                                <rect key="frame" x="20" y="155.5" width="335" height="75.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejj-dT-DDZ" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="mq0-3C-P7N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="24"/>
+                                <state key="normal" title="SET LOCATION">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setLocationButtonPressed:" destination="dRD-yu-RNj" eventType="touchUpInside" id="ZBI-LI-CHR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ejj-dT-DDZ" secondAttribute="trailing" id="0dB-Oj-4fT"/>
+                            <constraint firstItem="ejj-dT-DDZ" firstAttribute="leading" secondItem="89c-t3-dUV" secondAttribute="leading" id="50x-cX-BPw"/>
+                            <constraint firstAttribute="trailing" secondItem="FgN-R4-AzZ" secondAttribute="trailing" constant="20" id="NGC-fG-3Qn"/>
+                            <constraint firstItem="FgN-R4-AzZ" firstAttribute="top" secondItem="G1v-9U-acz" secondAttribute="bottom" constant="40" id="Rkv-sa-1c2"/>
+                            <constraint firstItem="FgN-R4-AzZ" firstAttribute="leading" secondItem="89c-t3-dUV" secondAttribute="leading" constant="20" id="SdG-9k-S2r"/>
+                            <constraint firstItem="fq1-PQ-dex" firstAttribute="leading" secondItem="89c-t3-dUV" secondAttribute="leading" constant="20" id="glj-BH-3nu"/>
+                            <constraint firstAttribute="trailing" secondItem="fq1-PQ-dex" secondAttribute="trailing" constant="20" id="mKU-8Z-mgI"/>
+                            <constraint firstItem="TVu-AS-XFA" firstAttribute="top" secondItem="ejj-dT-DDZ" secondAttribute="bottom" id="rr8-Nq-rQP"/>
+                            <constraint firstItem="fq1-PQ-dex" firstAttribute="top" secondItem="FgN-R4-AzZ" secondAttribute="bottom" constant="20" id="sTF-5P-rvp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="fq1-PQ-dex" id="eyB-zV-lCh"/>
+                        <outlet property="setLocationButton" destination="ejj-dT-DDZ" id="VfE-mW-nOA"/>
+                        <outlet property="titleTextField" destination="FgN-R4-AzZ" id="UUj-xQ-ZQ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CBb-7K-ZvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="160"/>
+        </scene>
+    </scenes>
+</document>

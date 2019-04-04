@@ -1,0 +1,14 @@
+/* 
+  Messaging.strings
+  Arrow
+
+  Created by Jacob Hazelgrove on 12/27/16.
+  Copyright © 2016 Arrow Application, LLC. All rights reserved.
+*/
+
+
+// Messaging intro view
+
+/* Informative text backup plain text string shown if the RTF file can't be located. */
+
+"messaging.intro.informative-text.backup-label" = "Plan less and live more with streamlined messaging and group chat features.";

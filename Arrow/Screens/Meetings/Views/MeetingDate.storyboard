@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-Bold.otf">
+            <string>AlegreyaSans-Bold</string>
+        </array>
+        <array key="AlegreyaSans-ExtraBold.otf">
+            <string>AlegreyaSans-ExtraBold</string>
+        </array>
+        <array key="AlegreyaSans-Medium.otf">
+            <string>AlegreyaSans-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Meeting DateVC-->
+        <scene sceneID="VVz-NO-EIj">
+            <objects>
+                <viewController storyboardIdentifier="MeetingDateVC" id="kpP-e0-aSX" customClass="MeetingDateVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LIQ-Fk-ETd"/>
+                        <viewControllerLayoutGuide type="bottom" id="nQJ-C9-vJF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FsP-oI-ye4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="CFR-hJ-1KQ">
+                                <rect key="frame" x="0.0" y="225" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="CGN-8d-5zi"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="511818313.567747">
+                                    <!--2017-03-21 19:45:13 +0000-->
+                                </date>
+                            </datePicker>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJK-Xh-kat">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LocationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5W7-lg-2PJ">
+                                        <rect key="frame" x="20" y="21" width="21" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="21" id="NN6-3p-VjG"/>
+                                            <constraint firstAttribute="height" constant="21" id="bp6-LK-Cfb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basement Tavern" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK7-A5-VzJ">
+                                        <rect key="frame" x="56" y="18" width="319" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="dG1-2F-c3E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2640 Main St., Santa Monica, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ola-SV-Edh">
+                                        <rect key="frame" x="56" y="39" width="319" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="OQV-CS-fq5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-Medium" family="Alegreya Sans" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ola-SV-Edh" firstAttribute="top" secondItem="fK7-A5-VzJ" secondAttribute="bottom" id="CCP-th-gHz"/>
+                                    <constraint firstAttribute="trailing" secondItem="fK7-A5-VzJ" secondAttribute="trailing" id="HSq-4R-wUk"/>
+                                    <constraint firstAttribute="bottom" secondItem="ola-SV-Edh" secondAttribute="bottom" id="LOo-Fw-Bqd"/>
+                                    <constraint firstItem="ola-SV-Edh" firstAttribute="leading" secondItem="5W7-lg-2PJ" secondAttribute="trailing" constant="15" id="SgK-CQ-1bf"/>
+                                    <constraint firstAttribute="height" constant="60" id="cBC-4d-JAx"/>
+                                    <constraint firstItem="5W7-lg-2PJ" firstAttribute="leading" secondItem="QJK-Xh-kat" secondAttribute="leading" constant="20" id="fQr-62-Fs8"/>
+                                    <constraint firstItem="fK7-A5-VzJ" firstAttribute="leading" secondItem="ola-SV-Edh" secondAttribute="leading" id="hGf-Lw-2Zl"/>
+                                    <constraint firstAttribute="trailing" secondItem="ola-SV-Edh" secondAttribute="trailing" id="pz8-al-22R"/>
+                                    <constraint firstItem="5W7-lg-2PJ" firstAttribute="top" secondItem="fK7-A5-VzJ" secondAttribute="top" constant="3" id="sCf-oF-9HN"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uG2-fU-N2c" customClass="ARButton" customModule="Arrow" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="BbK-uj-DLO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="24"/>
+                                <state key="normal" title="FINALIZE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonPressed:" destination="kpP-e0-aSX" eventType="touchUpInside" id="SpU-cc-WSz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CFR-hJ-1KQ" firstAttribute="leading" secondItem="FsP-oI-ye4" secondAttribute="leading" id="0IT-Ta-e0X"/>
+                            <constraint firstAttribute="trailing" secondItem="QJK-Xh-kat" secondAttribute="trailing" id="IrC-f4-Ado"/>
+                            <constraint firstAttribute="trailing" secondItem="uG2-fU-N2c" secondAttribute="trailing" id="JVL-fz-QN2"/>
+                            <constraint firstAttribute="trailing" secondItem="CFR-hJ-1KQ" secondAttribute="trailing" id="KNP-Oo-Wtn"/>
+                            <constraint firstItem="QJK-Xh-kat" firstAttribute="leading" secondItem="FsP-oI-ye4" secondAttribute="leading" id="Smz-qA-ypT"/>
+                            <constraint firstItem="QJK-Xh-kat" firstAttribute="top" secondItem="FsP-oI-ye4" secondAttribute="top" id="aSZ-uC-tCb"/>
+                            <constraint firstItem="nQJ-C9-vJF" firstAttribute="top" secondItem="uG2-fU-N2c" secondAttribute="bottom" id="iYj-nM-pSe"/>
+                            <constraint firstItem="CFR-hJ-1KQ" firstAttribute="centerY" secondItem="FsP-oI-ye4" secondAttribute="centerY" id="j8o-PK-ZYw"/>
+                            <constraint firstItem="uG2-fU-N2c" firstAttribute="leading" secondItem="FsP-oI-ye4" secondAttribute="leading" id="zBp-Zb-nW8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="CFR-hJ-1KQ" id="4ll-OT-IRl"/>
+                        <outlet property="placeAddressLabel" destination="ola-SV-Edh" id="dn3-Ee-ADG"/>
+                        <outlet property="placeNameLabel" destination="fK7-A5-VzJ" id="FJu-hs-CQS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoM-lx-6Vt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-249" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LocationIcon" width="17" height="21"/>
+    </resources>
+</document>

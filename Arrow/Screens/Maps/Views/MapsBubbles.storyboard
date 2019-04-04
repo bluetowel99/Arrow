@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Maps BubblesVC-->
+        <scene sceneID="T3E-ww-aLp">
+            <objects>
+                <viewController storyboardIdentifier="MapsBubblesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nKg-fw-S7C" customClass="MapsBubblesVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gdg-Fj-mvI"/>
+                        <viewControllerLayoutGuide type="bottom" id="pUC-3T-4bv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w7i-SD-nUs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZf-2p-W4N">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLc-Pf-pkP">
+                                <rect key="frame" x="0.0" y="20" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AZf-2p-W4N" firstAttribute="leading" secondItem="w7i-SD-nUs" secondAttribute="leading" id="73z-bg-yLo"/>
+                            <constraint firstAttribute="trailing" secondItem="AZf-2p-W4N" secondAttribute="trailing" id="AWa-YV-3U9"/>
+                            <constraint firstItem="oLc-Pf-pkP" firstAttribute="height" secondItem="w7i-SD-nUs" secondAttribute="height" id="Gx8-zO-WNT"/>
+                            <constraint firstItem="AZf-2p-W4N" firstAttribute="top" secondItem="gdg-Fj-mvI" secondAttribute="bottom" id="Qw5-2K-oik"/>
+                            <constraint firstItem="pUC-3T-4bv" firstAttribute="top" secondItem="AZf-2p-W4N" secondAttribute="bottom" id="W1v-mV-KTh"/>
+                            <constraint firstItem="oLc-Pf-pkP" firstAttribute="leading" secondItem="w7i-SD-nUs" secondAttribute="leading" id="eu4-6Y-hyE"/>
+                            <constraint firstAttribute="trailing" secondItem="oLc-Pf-pkP" secondAttribute="trailing" id="udM-7R-Jgn"/>
+                            <constraint firstItem="oLc-Pf-pkP" firstAttribute="top" secondItem="gdg-Fj-mvI" secondAttribute="bottom" id="xjQ-SN-H74"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blurredBackgroundView" destination="AZf-2p-W4N" id="4Z6-ZJ-SFz"/>
+                        <outlet property="bubblesListHolderView" destination="oLc-Pf-pkP" id="KAc-Tt-I3w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D80-1i-k91" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266" y="-330"/>
+        </scene>
+    </scenes>
+</document>

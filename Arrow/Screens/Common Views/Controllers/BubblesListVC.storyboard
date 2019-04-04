@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-Bold.otf">
+            <string>AlegreyaSans-Bold</string>
+        </array>
+        <array key="AlegreyaSans-ExtraBold.otf">
+            <string>AlegreyaSans-ExtraBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Bubbles ListVC-->
+        <scene sceneID="jqR-MR-mjL">
+            <objects>
+                <viewController storyboardIdentifier="BubblesListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LCk-T4-1uJ" customClass="BubblesListVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8cg-HS-a9s"/>
+                        <viewControllerLayoutGuide type="bottom" id="y3z-Wp-nF0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DoT-cq-L3A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Tu-xm-7pK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fd-ck-k1o">
+                                <rect key="frame" x="0.0" y="20" width="375" height="153.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a Bubble with your friends and navigate Arrow’s live-activity map together." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0N-dZ-k9s">
+                                        <rect key="frame" x="15" y="28" width="345" height="43.5"/>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="18"/>
+                                        <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAe-KW-XaM">
+                                        <rect key="frame" x="74.5" y="93.5" width="225" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="pLZ-dx-GL7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-ExtraBold" family="Alegreya Sans" pointSize="18"/>
+                                        <state key="normal" title="Create A Bubble">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createBubbleButtonPressedWithSender:" destination="LCk-T4-1uJ" eventType="touchUpInside" id="FwV-Ty-sBu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="vAe-KW-XaM" firstAttribute="width" secondItem="4fd-ck-k1o" secondAttribute="width" multiplier="0.6" id="14g-tI-aoc"/>
+                                    <constraint firstAttribute="bottom" secondItem="vAe-KW-XaM" secondAttribute="bottom" constant="20" id="3k6-dU-eS9"/>
+                                    <constraint firstItem="vAe-KW-XaM" firstAttribute="centerX" secondItem="4fd-ck-k1o" secondAttribute="centerX" id="Ghd-3E-f5n"/>
+                                    <constraint firstAttribute="trailing" secondItem="H0N-dZ-k9s" secondAttribute="trailing" constant="15" id="Oxh-Ld-f59"/>
+                                    <constraint firstItem="H0N-dZ-k9s" firstAttribute="top" secondItem="4fd-ck-k1o" secondAttribute="top" constant="28" id="Use-dI-9Q6"/>
+                                    <constraint firstItem="H0N-dZ-k9s" firstAttribute="leading" secondItem="4fd-ck-k1o" secondAttribute="leading" constant="15" id="loK-aH-3NN"/>
+                                    <constraint firstItem="vAe-KW-XaM" firstAttribute="top" secondItem="H0N-dZ-k9s" secondAttribute="bottom" constant="22" id="tAI-29-aUj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4Tu-xm-7pK" secondAttribute="trailing" id="CXD-Vr-ZFL"/>
+                            <constraint firstItem="4fd-ck-k1o" firstAttribute="width" secondItem="4Tu-xm-7pK" secondAttribute="width" id="L02-Sw-5k1"/>
+                            <constraint firstItem="4fd-ck-k1o" firstAttribute="top" secondItem="4Tu-xm-7pK" secondAttribute="top" id="LcC-6I-i7b"/>
+                            <constraint firstItem="4fd-ck-k1o" firstAttribute="centerX" secondItem="4Tu-xm-7pK" secondAttribute="centerX" id="QqB-Ed-P0X"/>
+                            <constraint firstItem="y3z-Wp-nF0" firstAttribute="top" secondItem="4Tu-xm-7pK" secondAttribute="bottom" id="XhZ-DX-I62"/>
+                            <constraint firstItem="4Tu-xm-7pK" firstAttribute="top" secondItem="8cg-HS-a9s" secondAttribute="bottom" id="xwN-N9-VZF"/>
+                            <constraint firstItem="4Tu-xm-7pK" firstAttribute="leading" secondItem="DoT-cq-L3A" secondAttribute="leading" id="y4N-gI-e2c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emptyStateButton" destination="vAe-KW-XaM" id="1qB-kK-WKY"/>
+                        <outlet property="emptyStateMessageLabel" destination="H0N-dZ-k9s" id="X2p-ba-4No"/>
+                        <outlet property="emptyStateView" destination="4fd-ck-k1o" id="IW6-KU-7jk"/>
+                        <outlet property="tableView" destination="4Tu-xm-7pK" id="KOQ-Aq-dDo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xlu-5b-dqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113" y="107"/>
+        </scene>
+    </scenes>
+</document>

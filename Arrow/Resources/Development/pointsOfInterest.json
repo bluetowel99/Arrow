@@ -1,0 +1,54 @@
+[
+ {
+ "latitude": 33.65033,
+ "longitude": -117.745124,
+ "name": "Yard House",
+ "encodedPaths": "yhklEbetmUMGFWKEBI]MMgACAAMBA?@\\I?AD?BRJABR??PrAA?",
+ "level": "lit",
+ "type": "bar"
+ },
+ {
+ "latitude": 33.652243,
+ "longitude": -117.746517,
+ "name": "Irvine Improv Comedy Club",
+ "encodedPaths": "otklEhltmUNFBEGQ??EOBAGOOIADGCAAEAE@EICBIE@EEEKNCD@?ADLF?@A@BNZC?DHA?DC@?@??`@E?F@?@F@??DK@",
+ "level": "decentScene",
+ "type": "bar"
+ },
+ {
+ "latitude": 33.651511,
+ "longitude": -117.746171,
+ "name": "Javier's Restaurant",
+ "encodedPaths": "_qklE|itmUW_AJCDQZLBLOt@",
+ "level": "prettyChill",
+ "type": "restaurant"
+ },
+ {
+ "latitude": 33.65157,
+ "longitude": -117.74512,
+ "name": "Edwards Irvine Spectrum 21 IMAX & RPX",
+ "level": "dead",
+ "type": "movieTheater"
+ },
+ {
+ "latitude": 33.65013,
+ "longitude": -117.74234,
+ "name": "Finish Line",
+ "level": "prettyChill",
+ "type": "gym"
+ },
+ {
+ "latitude": 33.64931,
+ "longitude": -117.74269,
+ "name": "Irvine Spectrum Ferris Wheel",
+ "level": "veryLively",
+ "type": "outdoorRecreation"
+ },
+ {
+ "latitude": 33.65212,
+ "longitude": -117.74415,
+ "name": "",
+ "level": "lit",
+ "type": "media"
+ }
+ ]

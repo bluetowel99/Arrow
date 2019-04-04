@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CameraVC-->
+        <scene sceneID="nkj-Dq-3F2">
+            <objects>
+                <viewController storyboardIdentifier="CameraVC" id="Eec-Pe-aXS" customClass="CameraVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8HA-6s-FWE"/>
+                        <viewControllerLayoutGuide type="bottom" id="9WM-Yn-JPT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rIE-8t-KbX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wIb-Hv-s8O" customClass="PreviewView" customModule="Arrow" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iF4-V8-Klq" appends="YES" id="WHu-4P-B6L"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oD-Qy-DJX">
+                                <rect key="frame" x="325" y="14" width="36" height="38"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" image="BorderedXCloseIcon"/>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="Eec-Pe-aXS" eventType="touchUpInside" id="Dv9-cz-CpL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbH-4J-89t">
+                                <rect key="frame" x="33.5" y="586.5" width="46" height="47"/>
+                                <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                <state key="normal" image="FlashAutoIcon"/>
+                                <connections>
+                                    <action selector="flashButtonPressed:" destination="Eec-Pe-aXS" eventType="touchUpInside" id="lxj-8U-g0e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Li-cw-9hj">
+                                <rect key="frame" x="148.5" y="568.5" width="79" height="82"/>
+                                <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                <state key="normal" image="CameraShutterIcon"/>
+                                <connections>
+                                    <action selector="captureButtonTouchUp:" destination="Eec-Pe-aXS" eventType="touchUpInside" id="Pii-RP-n8o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2j-G8-3kf">
+                                <rect key="frame" x="298" y="590.5" width="42" height="38"/>
+                                <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                <state key="normal" image="SwitchCameraIcon"/>
+                                <connections>
+                                    <action selector="switchCameraButtonPressed:" destination="Eec-Pe-aXS" eventType="touchUpInside" id="mf9-dS-AEy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y2j-G8-3kf" firstAttribute="centerY" secondItem="9Li-cw-9hj" secondAttribute="centerY" id="3Kk-kf-Pdj"/>
+                            <constraint firstItem="9Li-cw-9hj" firstAttribute="bottom" secondItem="rIE-8t-KbX" secondAttribute="centerY" multiplier="1.95" id="6Sb-zq-dXr"/>
+                            <constraint firstItem="7oD-Qy-DJX" firstAttribute="top" secondItem="wIb-Hv-s8O" secondAttribute="top" constant="14" id="DWQ-IV-Su8"/>
+                            <constraint firstItem="9Li-cw-9hj" firstAttribute="centerX" secondItem="rIE-8t-KbX" secondAttribute="centerX" id="JIA-X9-7uQ"/>
+                            <constraint firstItem="zbH-4J-89t" firstAttribute="centerY" secondItem="9Li-cw-9hj" secondAttribute="centerY" id="Ohd-wo-HL0"/>
+                            <constraint firstAttribute="trailing" secondItem="7oD-Qy-DJX" secondAttribute="trailing" constant="14" id="YaJ-ls-V8v"/>
+                            <constraint firstItem="wIb-Hv-s8O" firstAttribute="width" secondItem="rIE-8t-KbX" secondAttribute="width" id="cn2-Pv-UZU"/>
+                            <constraint firstItem="wIb-Hv-s8O" firstAttribute="centerX" secondItem="rIE-8t-KbX" secondAttribute="centerX" id="fr0-8e-PJu"/>
+                            <constraint firstItem="wIb-Hv-s8O" firstAttribute="centerY" secondItem="rIE-8t-KbX" secondAttribute="centerY" id="iXs-ZE-Jnd"/>
+                            <constraint firstItem="Y2j-G8-3kf" firstAttribute="centerX" secondItem="rIE-8t-KbX" secondAttribute="centerX" multiplier="1.7" id="jNL-WZ-ayH"/>
+                            <constraint firstItem="wIb-Hv-s8O" firstAttribute="height" secondItem="rIE-8t-KbX" secondAttribute="height" id="qmu-E0-fuU"/>
+                            <constraint firstItem="zbH-4J-89t" firstAttribute="centerX" secondItem="rIE-8t-KbX" secondAttribute="centerX" multiplier="0.3" id="zPa-Rj-ymU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="captureButton" destination="9Li-cw-9hj" id="vHB-sa-u0t"/>
+                        <outlet property="closeButton" destination="7oD-Qy-DJX" id="Jze-bS-OfY"/>
+                        <outlet property="flashButton" destination="zbH-4J-89t" id="dR5-9r-pQB"/>
+                        <outlet property="previewView" destination="wIb-Hv-s8O" id="CpC-mH-fH9"/>
+                        <outlet property="switchCameraButton" destination="Y2j-G8-3kf" id="fRz-jF-ybT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ueU-cd-iKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="iF4-V8-Klq">
+                    <connections>
+                        <action selector="focusAndExposeTap:" destination="Eec-Pe-aXS" id="Jrt-MN-sQQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BorderedXCloseIcon" width="20" height="20"/>
+        <image name="CameraShutterIcon" width="71" height="74"/>
+        <image name="FlashAutoIcon" width="38" height="39"/>
+        <image name="SwitchCameraIcon" width="34" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlegreyaSans-Bold.otf">
+            <string>AlegreyaSans-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Camera LocationVC-->
+        <scene sceneID="GLI-0Q-2JW">
+            <objects>
+                <viewController storyboardIdentifier="CameraLocationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qDe-gl-cIb" customClass="CameraLocationVC" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cfZ-ab-vB5"/>
+                        <viewControllerLayoutGuide type="bottom" id="SRb-kO-qIN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rZg-U9-oqw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIK-HW-YrZ" userLabel="Search View">
+                                <rect key="frame" x="15" y="32" width="345" height="39"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RoundLocationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="BtN-2P-BlH">
+                                        <rect key="frame" x="10" y="9" width="19" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="Q8y-BZ-9O9"/>
+                                            <constraint firstAttribute="width" constant="19" id="hJu-De-dPr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter an address or place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dQg-My-S85">
+                                        <rect key="frame" x="39" y="6" width="298" height="27"/>
+                                        <color key="textColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BtN-2P-BlH" firstAttribute="centerY" secondItem="gIK-HW-YrZ" secondAttribute="centerY" id="LcV-ka-UpC"/>
+                                    <constraint firstItem="BtN-2P-BlH" firstAttribute="leading" secondItem="gIK-HW-YrZ" secondAttribute="leading" constant="10" id="Y1L-fF-w5J"/>
+                                    <constraint firstAttribute="trailing" secondItem="dQg-My-S85" secondAttribute="trailing" constant="8" id="gGZ-25-PN4"/>
+                                    <constraint firstItem="dQg-My-S85" firstAttribute="leading" secondItem="BtN-2P-BlH" secondAttribute="trailing" constant="10" id="jsL-lq-QZO"/>
+                                    <constraint firstAttribute="bottom" secondItem="dQg-My-S85" secondAttribute="bottom" constant="6" id="mnT-Yn-klZ"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BtN-2P-BlH" secondAttribute="bottom" id="ovP-Nh-Uhh"/>
+                                    <constraint firstItem="dQg-My-S85" firstAttribute="top" secondItem="gIK-HW-YrZ" secondAttribute="top" constant="6" id="raV-R4-Pj2"/>
+                                    <constraint firstItem="BtN-2P-BlH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gIK-HW-YrZ" secondAttribute="top" id="uh8-dT-vXl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDW-gB-SaC" userLabel="Current Location View">
+                                <rect key="frame" x="15" y="87" width="345" height="30"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CurrentLocationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bPq-AG-Ca1">
+                                        <rect key="frame" x="12" y="7" width="16" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="2Wu-uk-VDZ"/>
+                                            <constraint firstAttribute="width" constant="16" id="vfl-Dg-haz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mnm-Ik-GLQ">
+                                        <rect key="frame" x="42" y="4" width="295" height="22"/>
+                                        <fontDescription key="fontDescription" name="AlegreyaSans-Bold" family="Alegreya Sans" pointSize="18"/>
+                                        <color key="textColor" red="0.050980392159999999" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="bPq-AG-Ca1" firstAttribute="centerY" secondItem="rDW-gB-SaC" secondAttribute="centerY" id="12F-x6-in0"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bPq-AG-Ca1" secondAttribute="bottom" id="Buh-h3-ryr"/>
+                                    <constraint firstItem="mnm-Ik-GLQ" firstAttribute="top" secondItem="rDW-gB-SaC" secondAttribute="top" constant="4" id="COZ-HA-Si6"/>
+                                    <constraint firstItem="bPq-AG-Ca1" firstAttribute="leading" secondItem="rDW-gB-SaC" secondAttribute="leading" constant="12" id="Nh8-L7-rp4"/>
+                                    <constraint firstAttribute="trailing" secondItem="mnm-Ik-GLQ" secondAttribute="trailing" constant="8" id="frA-UG-H3B"/>
+                                    <constraint firstItem="bPq-AG-Ca1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rDW-gB-SaC" secondAttribute="top" id="kKY-rB-RGt"/>
+                                    <constraint firstAttribute="bottom" secondItem="mnm-Ik-GLQ" secondAttribute="bottom" constant="4" id="od1-rV-52Y"/>
+                                    <constraint firstItem="mnm-Ik-GLQ" firstAttribute="leading" secondItem="bPq-AG-Ca1" secondAttribute="trailing" constant="14" id="wQt-8k-rEE"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cZf-uh-Nhp">
+                                <rect key="frame" x="0.0" y="121" width="375" height="546"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rDW-gB-SaC" firstAttribute="centerX" secondItem="rZg-U9-oqw" secondAttribute="centerX" id="8Gb-bu-Yix"/>
+                            <constraint firstItem="SRb-kO-qIN" firstAttribute="top" secondItem="cZf-uh-Nhp" secondAttribute="bottom" id="BLK-sr-usv"/>
+                            <constraint firstItem="cZf-uh-Nhp" firstAttribute="top" secondItem="rDW-gB-SaC" secondAttribute="bottom" constant="4" id="Bhw-Hj-cQb"/>
+                            <constraint firstItem="gIK-HW-YrZ" firstAttribute="top" secondItem="cfZ-ab-vB5" secondAttribute="bottom" constant="12" id="VJt-GP-8If"/>
+                            <constraint firstItem="rDW-gB-SaC" firstAttribute="width" secondItem="gIK-HW-YrZ" secondAttribute="width" id="Vgh-cC-70P"/>
+                            <constraint firstItem="gIK-HW-YrZ" firstAttribute="width" secondItem="rZg-U9-oqw" secondAttribute="width" multiplier="0.92" id="Xss-SN-rsz"/>
+                            <constraint firstItem="rDW-gB-SaC" firstAttribute="top" secondItem="gIK-HW-YrZ" secondAttribute="bottom" constant="16" id="ekH-RO-8P7"/>
+                            <constraint firstItem="cZf-uh-Nhp" firstAttribute="width" secondItem="rZg-U9-oqw" secondAttribute="width" id="nc3-Sf-n3C"/>
+                            <constraint firstAttribute="trailing" secondItem="cZf-uh-Nhp" secondAttribute="trailing" id="srq-wR-lLt"/>
+                            <constraint firstItem="gIK-HW-YrZ" firstAttribute="centerX" secondItem="rZg-U9-oqw" secondAttribute="centerX" id="wn4-ev-nLv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentLocationLabel" destination="mnm-Ik-GLQ" id="uhI-cl-axc"/>
+                        <outlet property="currentLocationView" destination="rDW-gB-SaC" id="PlI-jz-YFT"/>
+                        <outlet property="searchTextField" destination="dQg-My-S85" id="fac-gi-kB1"/>
+                        <outlet property="tableView" destination="cZf-uh-Nhp" id="Olx-CO-cXt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbf-dp-FOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111" y="111"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CurrentLocationIcon" width="16" height="17"/>
+        <image name="RoundLocationIcon" width="19" height="22"/>
+    </resources>
+</document>

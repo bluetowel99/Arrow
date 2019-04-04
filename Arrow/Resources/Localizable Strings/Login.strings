@@ -1,0 +1,21 @@
+/* 
+  Login.strings
+  Arrow
+
+  Created by Brian on 1/12/18.
+  Copyright © 2018 Arrow Application, LLC. All rights reserved.
+*/
+
+
+// Log In Form Screen
+
+
+/* First name placeholder. */
+
+/* Email placeholder. */
+
+"form.email-field.placeholder" = "Email";
+
+/* Password placeholder. */
+
+"form.password-field.placeholder" = "Password";
